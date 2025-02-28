@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="todos.css">
+    <a href="#carrito"><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"><a href="#carrito"></a>
+
+
+
+    <div class="search-container">
+        <h1><a href="bookpage.html">BookShelf</a></h1>
+        <input type="text" id="searchBar" placeholder="Buscar libros..." onkeyup="buscarLibros()">
+    </div>
+    
+<div class="galeria">
+
+    <div class="img" onclick="showInfo('El chico de arriba', 'Poppy es una niña risueña y una prodigiosa violonchelista. Rune es misterioso y amante de la fotografía. Su historia juntos comenzó desde que eran muy pequeños, cuando se convirtieron en cómplices de aventuras, secretos y de un amor inquebrantable. Los años han pasado y, tras la muerte de su abuela, Poppy tiene la misión de llenar un frasco con mil besos de la persona que haga a su corazón estallar de amor, y sabe que sólo con Rune podrá iniciar esa gran aventura.')">
+        <img src="elchico.jpg">
+<p>El chico de arriba</p>
+<h5>1,250</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Mil besos tuyos', 1150); mostrarNotificacion('Mil besos tuyos añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+    
+
+    <div class="img" onclick="showInfo('Una perfecta equivocación', 'Existe un lugar en el mundo, entre pastos verdes, ríos helados y calles empedradas, en el que el sol no sale mucho y, aun así, congrega a los habitantes más cálidos que puedas imaginar. Allí vive Lilibeth, nuestra protagonista, que regenta la única escuela del pueblo. Adora a sus alumnos, bordar la ropa que compra con pequeñas flores, el té, cuidar su jardín y reunirse con sus seres queridos. Es una chica afable, dulce y risueña, o eso es lo que te diría cualquier vecino de Havenwish. Cualquiera menos Blake, que llegó al pueblo hace poco y no tiene muy buena opinión sobre la maestra de su hija pequeña. ¿Podrán un concurso de jardines, la rivalidad entre unos vecinos muy peculiares y un puñado de secretos conseguir que no quieras salir nunca de Havenwish?')">
+        <img src="equiv.jpg">
+        <p>Una perfecta equivocación</p>
+<h5>1,250</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Una perfecta equivocación', 1150); mostrarNotificacion('Una perfecta equivocación añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+
+    </div>
+
+    <div class="img" onclick="showInfo('Heist', 'La historia de cómo dos astros colisionan. Liam ha perdido su pasión por YouTube. Está metido en una relación falsa que ha tenido un resultado catastrófico: se ha enamorado de la chica, Michelle, y ahora ella sale a escondidas con su mejor amigo. Maia tiene pesadillas desde la noche del accidente. Todos los días va al hospital a visitar a una estrella cuya luz se tambalea. Un cumpleaños caótico. Una botella de vodka y un youtuber borracho que acaba durmiendo en el coche de una desconocida ¿Qué mejor combinación para conseguir que dos astros colisionen?')">
+        <img src="heist.jpeg">
+        <p>Heist</p>
+<h5>1,300</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Heist', 1300); mostrarNotificacion('Heist añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+
+    </div>
+
+    <div class="img" onclick="showInfo('Fleur', 'La vida no es justa, y eso Logan lo sabe muy bien. Después de una dolorosa pérdida, su corazón se ha vuelto hermético, frío e inquebrantable. Por eso no le importa que todos crean que es el malo de la historia. Leah nunca se ha sentido la protagonista de la suya. Vive con la cabeza enterrada en los libros, intentando pasar desapercibida, y se refugia en la gran comunidad de lectores que tiene en internet. Leah no es el tipo de chica que Logan está buscando. Y Logan es la clase de chico que Leah trata de evitar. Quizá por eso lo que hay entre ellos funciona tan bien.')">
+        <img src="fleur.jpg">
+        <p>Fleur</p>
+<h5>1,350</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Fleur', 1350); mostrarNotificacion('Fleur añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('Sigue mi voz', 'Maeve no sabe mucho sobre sí misma. Sólo que no deja de pensar en si su madre cumplió todos sus sueños antes de morir, que la relación con su novio va cada vez peor y que está cansada de que todos sus días sean iguales. Cuando, por un impulso, acaba comprando un billete solo de ida a la otra parte del mundo para volver al pueblo en el que vivió cuando era niña, lo que menos esperaba era reencontrarse allí con el que fue su mejor amigo de la infancia.Connor siempre supo que tarde o temprano Maeve regresaría. Lo que nunca pensó es que fuera a ser así. Tan caótica. Tan perdida. Como si aún estuviera por definir.')">
+        <img src="voz.jpg.png">
+        <p>Sigue mi voz</p>
+<h5>1,300</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Sigue mi voz', 1300); ; mostrarNotificacion('Sigue mi voz añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('Antes de diciembre', 'Para Jenna Brown, su primer año en la Universidad suponía alejarse de su familia y sus amigos y enfrentarse al mundo por primera vez en su vida. Su novio le había dejado claras sus intenciones: a partir de ese momento, tenían una relación a distancia y abierta. Ambos podían hacer lo que quisieran porque sabían que se querían el uno al otro. Así que no pasaba nada si no dejaba de acercarse al mejor amigo del novio de su compañera de habitación, ¿no? De todos modos, ¿que importaba si estaba con el en ausencia de su novio? Todo volvería a la normalidad en diciembre. ¿Cambiaría algo? Tenía hasta entonces para descubrirlo.')">
+        <img src="add.jpg">
+     <p>Antes de diciembre</p>
+     <h5>1,250</h5>
+     <button onclick="event.stopPropagation();agregarAlCarrito('Antes de diciembre', 1250); mostrarNotificacion('Antes de diciembre añadido al carrito');">
+         <i class="fas fa-shopping-cart"></i>
+     </button>
+ </div>
+ 
+ <div class="img" onclick="showInfo('Después de diciembre', 'Todo cambiará... después de diciembre. El tiempo es algo relativo. Para algunos pasa ás rápido, para otros, no tanto. A Jenna Brown ')">
+ <img src="ddd.jpg">
+     <p>Después de diciembre</p>
+     <h5>1,250</h5>
+     <button onclick="event.stopPropagation();agregarAlCarrito('Después de diciembre', 1250); mostrarNotificacion('Después de diciembre añadido al carrito');">
+         <i class="fas fa-shopping-cart"></i>
+     </button>
+ </div>
+ 
+ <div class="img" onclick="showInfo('Tres meses', '')">
+ <img src="tm.jpg">
+     <p>Tres meses</p>
+     <h5>1,250</h5>
+     <button onclick="event.stopPropagation();agregarAlCarrito('Tres meses', 1250); mostrarNotificacion('Tres meses añadido al carrito');">
+         <i class="fas fa-shopping-cart"></i>
+     </button>
+ </div>
+ 
+ <div class="img" onclick="showInfo('Boulevard', '')">
+ <img src="bou.jpg">
+     <p>Boulevard</p>
+     <h5>1,250</h5>
+     <button onclick="event.stopPropagation();agregarAlCarrito('Boulevard', 1250); mostrarNotificacion('Boulevard añadido al carrito');">
+         <i class="fas fa-shopping-cart"></i>
+     </button>
+ </div>
+  
+ <div class="img" onclick="showInfo('Culpa mía', '')">
+    <img src="cm.jpg">
+        <p>Culpa mía</p>
+        <h5>1,150</h5>
+        <button onclick="event.stopPropagation();agregarAlCarrito('Culpa mía', 1150); mostrarNotificacion('Culpa mía añadido al carrito');">
+            <i class="fas fa-shopping-cart"></i>
+    </div>
+    
+    <div class="img" onclick="showInfo('Culpa tuya', '')">
+    <img src="ct.jpg">
+        <p>Culpa tuya</p>
+        <h5>1,150</h5>
+        <button onclick="event.stopPropagation();agregarAlCarrito('Culpa tuya', 1150); mostrarNotificacion('Culpa tuya añadido al carrito');">
+            <i class="fas fa-shopping-cart"></i>
+    </div>
+    
+    <div class="img" onclick="showInfo('Culpa nuestra', '')">
+    <img src="cn.jpg">
+        <p>Culpa nuestra</p>
+        <h5>1,150</h5>
+        <button onclick="event.stopPropagation();agregarAlCarrito('Culpa nuestra', 1150); mostrarNotificacion('Culpa nuestra añadido al carrito');">
+            <i class="fas fa-shopping-cart"></i>
+    </div>  
+
+
+    <div class="img" onclick="showInfo('Perfectos mentirosos 1', 'Todo lo que hay que saber sobre Zac Anderson es que, para él, el amor es la peor enfermedad que existe. Es que es un ligón empedernido que nunca se enamora y a cuya sonrisa encantadora solo se ha resistido una mujer. Y, que es médico y va a mudarse a Manhattan. Grace Harris acaba de ascender a editora jefa y desde el primer día las catástrofes se suceden en el trabajo de sus sueños. Cuando menos se lo espere, Zac Anderson estará dispuesto a ayudarla si ella le acompaña a llevar su coche desde California a Nueva York. Grace siempre ha querido vivir una comedia romántica. Por eso acepta el trato. Son demasiado incompatibles para fijarse el uno en el otro, pero un viaje por carretera podría demostrarles que están equivocados.')">
+        <img src="pm.jpg">
+        <p>Perfectos mentirosos 1</p>
+<h5>1,300</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Perfectos mentirosos 1', 1300); mostrarNotificacion('Perfectos mentirosos 1 añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('Perfectos mentirosos 2', 'Hasta ahora han permanecido en lados opuestos del campo, pero cuando sus dos mundos choquen, nada volverá a ser lo mismo. Johnny Kavanagh lo tiene todo a su favor. En el campo de rugby es una fuerza imparable. Ha nacido para el estrellato y nada detendrá su camino a la cima. La vida nunca ha sido fácil para Shannon Lynch. Acosada y torturada por sus antiguas compañeras, llega a Tommen a mitad del año escolar, rezando por un nuevo comienzo y desesperada por librarse de los demonios de su pasado. Johnny y Shannon tendrán que enfrentarse a todos los obstáculos que amenazarán el comienzo de una relación que puede ser mucho más...')">
+        <img src="pm1.jpg">             
+        <p>Perfectos mentirosos 2</p>
+<h5>1,250</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Perfectos mentirosos 2', 1500); mostrarNotificacion('Perfectos mentirosos 2 añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('Perfectos mentirosos (pack)', 'Hasta ahora han permanecido en lados opuestos del campo, pero cuando sus dos mundos choquen, nada volverá a ser lo mismo. Johnny Kavanagh lo tiene todo a su favor. En el campo de rugby es una fuerza imparable. Ha nacido para el estrellato y nada detendrá su camino a la cima. La vida nunca ha sido fácil para Shannon Lynch. Acosada y torturada por sus antiguas compañeras, llega a Tommen a mitad del año escolar, rezando por un nuevo comienzo y desesperada por librarse de los demonios de su pasado. Johnny y Shannon tendrán que enfrentarse a todos los obstáculos que amenazarán el comienzo de una relación que puede ser mucho más...')">
+        <img src="pmpack.jpg">             
+        <p>Perfectos mentirosos (pack)</p>
+<h5>2,450</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Perfectos mentirosos (pack)', 2450); mostrarNotificacion('Perfectos mentirosos (pack) añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('Damian', 'Lo que viene después es el verdadero desafío... Tras una devastadora lesión que lo ha mandado al banquillo, Johnny Kavanagh se aferra como puede a sus sueños. Perdido, inseguro y necesitado de consuelo, decide desentrañar los misterios que envuelven a la chica de ojos azules en la que no puede dejar de pensar ni un minuto. Guardar un secreto nunca ha sido un problema para Shannon Lynch. La única forma de protegerse es levantar un muro a su alrededor. Solo un chico será capaz de saltar ese muro, el mismo que le ha robado el corazón. Sin embargo, están a punto de salir a la luz secretos que cambiarán sus vidas para siempre.')">
+        <img src="damian.jpg">
+        <p>Damian</p>
+<h5>1,550</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Damian', 1300); mostrarNotificacion('Damian añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img"onclick="showInfo('Un principe en apuros', 'Él es un chico perdido. Ella es la chica que podría convertirse en el hogar que nunca tuvo. Joey Lynch, el segundo hijo de un matrimonio roto, lleva toda la vida recogiendo los pedazos de una familia en descomposición. Cuando su hermano mayor, Darren, abandona la ciudad, Joey se ve obligado con tan solo doce años a asumir el papel de protector de su madre y sus hermanos pequeños. Atormentado por el odio que siente hacia sí mismo y furioso con el mundo, afronta la vida adolescente y el inquebrantable sentido del deber que le profesa a su familia mientras avanza peligrosamente hacia una vida de adicción que amenaza con engullirlo por completo. La única luz en ese mar de oscuridad es la vivaracha hija de su jefe, una chica que nunca se echa atrás y que da la casualidad de que va a su clase.')">
+        <img src="upea.jpg">
+        <p>Un principe en apuros</p>
+<h5>1,350</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Un principe en apuros', 1300); mostrarNotificacion('Un principe en apuros añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('A través de mi ventana', 'Mientras el mundo se desmorona a su alrededor, la vida de Joey Lynch es más turbulenta que nunca. Desesperado por sentirse digno de la única persona en la que ha confiado jamás, Joey lucha por alejarse de un entorno que amenaza con destruirlo todo. Pero, con tanto en su contra, ¿logrará mantenerse a flote? Sin intención de abandonar al chico al que ama, Aoife Molloy pelea por salvarlo de la autodestrucción. Ahogándose en un mundo que no comprende, sin otra guía que los dictados de su corazón, se niega a darle la espalda a Joey incluso cuando parece que tienen todas las de perder. Pese al sufrimiento y el horror, Aoife y Joey nunca han dejado de apoyarse el uno al otro, ¿será esta vez diferente?')">
+        <img src="atdmv.jpg">
+        <p>A través de mi ventana</p>
+<h5>1,300</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('A través de mi ventana', 1300); mostrarNotificacion('A través de mi ventana añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('A través de ti', 'Emma Blair, una mujer que reconstruyó su vida tras la trágica desaparición de su marido Jesse en un accidente, enfrenta una encrucijada inesperada. Años después, tras haber encontrado el amor nuevamente con Sam, un viejo amigo, y comprometerse con él, descubre que Jesse está vivo y ha estado intentando regresar a casa. Ahora, Emma debe decidir entre dos hombres que representan distintas etapas de su vida y entender qué significa realmente amar. En este viaje emocional, Emma explora el verdadero significado del amor y la búsqueda de su propia felicidad.')">
+        <img src="atdt.jpg">
+        <p>A través de ti</p>
+<h5>1,250</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('A través de ti', 1250); mostrarNotificacion('A través de la lluvia añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('A través de la lluvia', 'Una noche en París. Dos caminos entrelazándose. Cuando Rhys y Ginger se conocen en las calles de la ciudad de la luz, no imaginan que sus vidas se unirán para siempre, a pesar de la distancia y de que no puedan ser más diferentes. Ella vive en Londres y a veces se siente tan perdida que se ha olvidado hasta de sus propios sueños. Él es incapaz de quedarse quieto en ningún lugar y cree saber quién es. Y cada noche su amistad crece entre emails llenos de confidencias, dudas e inquietudes. Pero ¿qué ocurre cuando el paso del tiempo pone a prueba su relación? ¿Es posible colgarse de la luna junto a otra persona sin poner en riesgo el corazón?')">
+        <img src="atdll.jpg">
+        <p>A través de la lluvia</p>
+<h5>1,300</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('A través de la lluvia', 1300); mostrarNotificacion('A través de la lluvia añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+ 
+    <div class="img" onclick="showInfo('Saga After', 'Una noche en París. Dos caminos entrelazándose. Cuando Rhys y Ginger se conocen en las calles de la ciudad de la luz, no imaginan que sus vidas se unirán para siempre, a pesar de la distancia y de que no puedan ser más diferentes. Ella vive en Londres y a veces se siente tan perdida que se ha olvidado hasta de sus propios sueños. Él es incapaz de quedarse quieto en ningún lugar y cree saber quién es. Y cada noche su amistad crece entre emails llenos de confidencias, dudas e inquietudes. Pero ¿qué ocurre cuando el paso del tiempo pone a prueba su relación? ¿Es posible colgarse de la luna junto a otra persona sin poner en riesgo el corazón?')">
+        <img src="after.jpg">
+        <p>Saga After</p>
+<h5>4,450</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Saga After', 4550); mostrarNotificacion('Saga After añadido al carrito');">
+  <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('Crueles instintos', 'Grace Peterson, una joven acostumbrada a la monotonía y la invisibilidad, pierde a su hermana, el eje de su existencia. Su vida cambia al descubrir el juego El mapa de los anhelos, que la lleva a buscar a Will Tucker. Juntos emprenden un viaje lleno de emociones, secretos y sueños olvidados, enfrentando la pregunta de si es posible avanzar cuando las verdades ocultas salen a la luz.')">
+        <img src="ci-removebg-preview.png">
+        <p>Crueles instintos</p>
+<h5>1,550</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Crueles instintos', 1550); mostrarNotificacion('Crueles instintos añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('Etéreo', '¿Y si lo único que necesitamos para ser felices es descubrir el brillo de las cosas intangibles? Nicki Aldrich y River Jackson han sido inseparables desde que llegaron al mundo con cuarenta y siete minutos de diferencia. Ella lo hizo envuelta en polvo de hadas. Él como si fuese un meteoro en llamas. El pequeño pueblo costero donde crecieron se convirtió en el escenario de sus paseos en bicicleta, las tardes en la casa del árbol y los primeros amores, secretos y dudas. Sin embargo, con el paso de los años, River sueña con escapar de aquel rincón perdido donde todo gira alrededor de la tradicional pesca de la langosta y Nicki anhela encontrar su lugar en el mundo. Para lograrlo, River y Nicki tendrán que bucear en las profundidades del corazón, rescatar pedazos de lo que fueron y entender aquello que rompieron. Y quizá así, logren descubrir quiénes son ahora y recordar el brillo de las cosas intangibles.')">
+        <img src="et.jpg">
+        <p>Etéreo</p>
+<h5>1,400</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Etéreo', 1400); mostrarNotificacion('Etéreo añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('No te enamores de nika','Dani, una chica común, es transportada accidentalmente a Albión, un mundo gobernado por una nobleza hipócrita donde los visitantes son tratados como sirvientes. Allí conoce a Marcus, heredero de los Abberlain y único capaz de devolverla a casa. Pero su don, codiciado por muchos, pone en peligro tanto a Marcus como a Dani, en un mundo lleno de intrigas, secretos y máscaras.')">
+        <img src="ntedn.jpg">
+        <p>No te enamores de nika</p>
+<h5>1,250</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('No te enamores de nika', 1250); mostrarNotificacion('No te enamores de nika añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('No te enamores de mia','Dani, una chica común, es transportada accidentalmente a Albión, un mundo gobernado por una nobleza hipócrita donde los visitantes son tratados como sirvientes. Allí conoce a Marcus, heredero de los Abberlain y único capaz de devolverla a casa. Pero su don, codiciado por muchos, pone en peligro tanto a Marcus como a Dani, en un mundo lleno de intrigas, secretos y máscaras.')">
+        <img src="ntedm.jpg">
+        <p>No te enamores de mia</p>
+<h5>1,300</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('No te enamores de mia', 1300); mostrarNotificacion('No te enamores de mia añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('El rey oscuro', 'Los dos quieren tener razón. Y los dos saben que se equivocan. Un enemies-to-lovers que te hará creer en el amor. Rain y Jack se odian. Rain y Jack pertenecen a planetas distintos. Rain y Jack no pueden tener menos cosas en común. Y, sin embargo, no dejan de cruzarse. Una y otra vez. Primero en el instituto, luego en un concierto e, inesperadamente, también unos años después, cuando ya creían que no volverían a encontrarse. Incluso se ven empujados a compartir una noche en una casa perdida en mitad del bosque. Rain piensa que las casualidades no existen. Jack, que las causalidades no lo explican todo. Los dos quieren tener razón. Y los dos saben que se equivocan. Y ambos intuyen que, sea cual sea la verdad, cuando se trata de amor no hay teoría científica que haga entender el mecanismo de un corazón cuando otro lo sacude.')">
+        <img src="ero-removebg-preview.png">
+        <p>El rey oscuro</p>
+<h5>1,200</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('El rey oscuro', 1300); mostrarNotificacion('El rey oscuro añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('Belleza oscura', 'Vera, Sara y Alexander eran inseparables. Siendo adolescentes, habían establecido un vínculo especial, una amistad inquebrantable; habían trenzado sus vidas con nudos en apariencia irrompibles. ¿Por qué entonces, en la actualidad, Sara se siente sola? ¿Por qué los veranos en el lago ya no son tan mágicos como en algún momento fueron? Una novela sobre esa amistad profunda que se forja en la juventud y que sobrevive incluso al paso más cruel del tiempo. Sobre el miedo, el rencor, el fracaso. Pero, también, sobre el amor; el amor por la familia, por los amigos, por el hogar, por aquellas personas que poseen la capacidad de hacer que tu mundo gire o deje de hacerlo. Sobre un amor de verano y sobre el amor de toda una vida.')">
+    <img src="bo.jpg">
+        <p>Belleza oscura</p>
+<h5>1,300</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Belleza oscura', 1300); mostrarNotificacion('Belleza oscura añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+
+    <div class="img" onclick="showInfo('Lascivia', 'Violet y Levi se conocen desde niños. Él sueña con crear un hogar. Ella, con escapar del suyo. Son mejores amigos, siempre están el uno para el otro y, cuando empiezan a crecer, se dan cuenta de que sus sentimientos también lo hacen. Intensos. Imparables. Únicos. Pero Levi desea echar raíces entre montañas mientras que Violet quiere volar muy alto y comerse el mundo. Es posible que no existan dos personas más incompatibles que encajen mejor. Una cabaña abandonada, una colección de figuras de madera y un amor de los que marcan toda una vida. El de Levi, el chico que hacía muchas preguntas, y el de Vi, la chica que tenía todas las respuestas.')">
+    <img src="las.jpg">
+        <p>Lascivia</p>
+<h5>2,500</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Lascivia', 2500); mostrarNotificacion('Lascivia añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('Lujuria', 'Varela de Mar es un pueblo pequeño y tranquilo. Doscientos treinta y tres habitantes. Una playa que desaparece cuando sube la marea. Un faro abandonado. Por eso Alba no lo visita desde hace cinco años. Bueno, por eso y porque allí fue donde aprendió lo que duele el amor y la herida aún escuece. Sin embargo, en Varela también está Pelayo, su abuelo, que ha comenzado a olvidar y que ahora la necesita. Y también los recuerdos que dejó en sus calles cuando se marchó sin mirar atrás. Y Enol. El chico de las conversaciones raras, la obsesión por las mareas y que parece haber nacido en la época equivocada. Un regreso inesperado, un faro lleno de secretos y dos historias inacabadas que, quizá, se merecen la oportunidad de un nuevo final.')">
+    <img src="luju.jpg">
+    <p>Lujuria </p>
+<h5>2,550</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Lujuria', 2500); mostrarNotificacion('Lujuria añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('Culpables (pack)', 'El libro nos enseña cómo en esta época las relaciones personales podían ser mezquinas, pues su principal motivación era la riqueza y el estatus social. El ingenio y la ironía con la que Austen narra esta historia dejará al lector enganchado desde el primer vistazo, pues la escritora narra, de una manera brillante, la hipocresía del momento y la dureza de ser mujer de este tiempo, a través de una historia que será lo opuesto a lo que estamos acostumbrados en las novelas románticas y servirá de guía para muchas otras comedias en tiempos posteriores.')">
+    <img src="packculpa.jpg">
+        <p>Culpables (pack)</p>
+    <h5>3,550</h5>
+    <button onclick="event.stopPropagation();agregarAlCarrito('', 3550); mostrarNotificacion('Culpables (pack)');">
+        <i class="fas fa-shopping-cart"></i>
+    </button>
+        </div>
+
+</div>
+
+
+
+
+
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <button class="close-btn" onclick="closePopup()">×</button>
+        <h3 id="popup-title">Título del libro</h3>
+        <p id="popup-description">Descripción del libro</p>
+    </div>
+</div>
+
+<script>
+    function showInfo(title, description) {
+        const popup = document.getElementById('popup');
+        document.getElementById('popup-title').textContent = title;
+        document.getElementById('popup-description').textContent = description;
+        popup.classList.add('visible');
+    }
+
+    function closePopup() {
+        const popup = document.getElementById('popup');
+        popup.classList.remove('visible');
+    }
+</script>
+
+    
+
+
+
+
+<script>
+
+function buscarLibros() {
+    // Obtener el valor del campo de búsqueda
+    let input = document.getElementById('searchBar').value.toLowerCase();
+    
+    // Obtener todos los contenedores de las imágenes
+    let libros = document.getElementsByClassName('img');
+
+    // Iterar sobre todos los libros y mostrar/ocultar según el texto de búsqueda
+    for (let i = 0; i < libros.length; i++) {
+        let titulo = libros[i].getElementsByTagName('p')[0].innerText.toLowerCase();
+        if (titulo.includes(input)) {
+            libros[i].style.display = ''; // Mostrar si coincide
+        } else {
+            libros[i].style.display = 'none'; // Ocultar si no coincide
+        }
+    }
+}
+</script>
+
+
+<div id="carrito">
+    <h2>Carrito de Compras</h2>
+    <ul id="listaCarrito"></ul>
+    <p>Total: <span id="totalCarrito">0</span></p>
+    <button class="btn-comprar" onclick="abrirModal()"><a href="carrito.html">Ver carrito</a></button>
+
+</div>
+
+
+<script>
+    // Lógica del carrito
+    let carrito = [];
+
+    function agregarAlCarrito(titulo, precio) {
+        carrito.push({ titulo, precio });
+        actualizarCarrito();
+    }
+
+    function actualizarCarrito() {
+        const listaCarrito = document.getElementById('listaCarrito');
+        const totalCarrito = document.getElementById('totalCarrito');
+
+        listaCarrito.innerHTML = '';
+        let total = 0;
+
+        carrito.forEach((producto, index) => {
+            total += producto.precio;
+            listaCarrito.innerHTML += `
+                <li>
+                    ${producto.titulo} - $${producto.precio} 
+                    <button onclick="eliminarDelCarrito(${index})">X</button>
+                </li>`;
+        });
+
+        totalCarrito.innerText = total;
+    }
+
+    function eliminarDelCarrito(index) {
+        carrito.splice(index, 1);
+        actualizarCarrito();
+    }
+
+    function buscarLibros() {
+        let input = document.getElementById('searchBar').value.toLowerCase();
+        let libros = document.getElementsByClassName('img');
+
+        for (let i = 0; i < libros.length; i++) {
+            let titulo = libros[i].getElementsByTagName('p')[0].innerText.toLowerCase();
+            if (titulo.includes(input)) {
+                libros[i].style.display = '';
+            } else {
+                libros[i].style.display = 'none';
+            }
+        }
+    }
+
+// Función para actualizar el carrito y guardarlo en localStorage
+function actualizarCarrito() {
+    const listaCarrito = document.getElementById('listaCarrito');
+    const totalCarrito = document.getElementById('totalCarrito');
+
+    listaCarrito.innerHTML = '';
+    let total = 0;
+
+    carrito.forEach((producto, index) => {
+        total += producto.precio;
+        listaCarrito.innerHTML += `
+            <li>
+                ${producto.titulo} - $${producto.precio} 
+                <button onclick="eliminarDelCarrito(${index})">X</button>
+            </li>`;
+    });
+
+    totalCarrito.innerText = total;
+
+    // Guarda el carrito en localStorage
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+}
+
+// Recuperar carrito al cargar la página en allbooks.html
+document.addEventListener("DOMContentLoaded", function () {
+    const carritoGuardado = localStorage.getItem('carrito');
+    if (carritoGuardado) {
+        carrito = JSON.parse(carritoGuardado);
+        actualizarCarrito();
+    }
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+<div id="toast-container"></div>
+
+<style>
+ .btn-comprar {
+    background: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 10px auto;
+}
+
+.btn-comprar a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btn-comprar:hover {
+    background: #218838;
+}
+
+    #toast-container {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    .toast {
+        background-color: #28a745;
+        color: #fff;
+        padding: 15px 20px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        animation: slideIn 0.5s, fadeOut 0.5s 2.5s;
+    }
+
+    .toast i {
+        font-size: 18px;
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeOut {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+</style>
+
+<script>
+    function mostrarNotificacion(mensaje) {
+        const toastContainer = document.getElementById('toast-container');
+        const toast = document.createElement('div');
+        toast.className = 'toast';
+        toast.innerHTML = `<i class="fas fa-check-circle"></i> ${mensaje}`;
+        toastContainer.appendChild(toast);
+
+        // Eliminar la notificación después de 3 segundos
+        setTimeout(() => {
+            toast.remove();
+        }, 3000);
+    }
+
+    
+
+
+
+
+
+
+
+
+
+    
+    // Recuperar el carrito desde LocalStorage o inicializarlo vacío
+letcarrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
+function agregarAlCarrito(titulo, precio) {
+    carrito.push({ titulo, precio });
+    actualizarCarrito();
+}
+
+function actualizarCarrito() {
+    const listaCarrito = document.getElementById('listaCarrito');
+    const totalCarrito = document.getElementById('totalCarrito');
+
+    if (!listaCarrito || !totalCarrito) return; // Verificación para evitar errores
+
+    listaCarrito.innerHTML = '';
+    let total = 0;
+
+    carrito.forEach((producto, index) => {
+        total += producto.precio;
+        const li = document.createElement('li');
+        li.innerHTML = `
+            ${producto.titulo} - $${producto.precio} 
+            <button onclick="eliminarDelCarrito(${index})">X</button>
+        `;
+        listaCarrito.appendChild(li);
+    });
+
+    totalCarrito.innerText = total;
+
+    // Guardar el carrito en LocalStorage
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+}
+
+function eliminarDelCarrito(index) {
+    carrito.splice(index, 1);
+    actualizarCarrito();
+}
+
+// Cargar el carrito cuando la página se abre
+document.addEventListener('DOMContentLoaded', actualizarCarrito);
+</script>
+
+
+
+
+
+
+<style>
+        @media (max-width: 768px) {
+            .galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en móviles */
+    gap: 10px;
+    padding: 10px;
+    width: 410px;
+    margin-left: 23px;
+
+}
+
+.button {
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 8px;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #0056b3;
+    padding: 7px;
+    border: none;
+    transition: all 0.3s ease; 
+}
+
+
+#carrito {
+    width: 280px;
+}
+        }
+</style>
+
+
+
+</body>
+</html>

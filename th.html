@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrillers</title>
+</head>
+<body>
+
+    <a href="#carrito"><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"><a href="#carrito"></a>
+
+
+    <div class="search-container">
+        <h1><a href="bookpage.html">BookShelf</a></h1>
+
+    </div>
+    
+
+
+    <link rel="stylesheet" href="todos.css">
+    
+    <div class="galeria">
+
+        <div class="img">
+            <img src="asistenta.jpg">
+        <p>La asistenta</p>
+        <h5>1,150</h5>
+        <button onclick="event.stopPropagation();agregarAlCarrito('La asistenta', 1150); mostrarNotificacion('añadido al carrito');">
+            <i class="fas fa-shopping-cart"></i>
+        </button>
+        </div>
+        
+        <div class="img">
+            <img src="asistenta2.jpg">
+            <p>El secreto de la asistenta</p>
+        <h5>1,250</h5>
+        <button onclick="event.stopPropagation();agregarAlCarrito('El secreto de la asistenta', 1250); mostrarNotificacion('añadido al carrito');">
+            <i class="fas fa-shopping-cart"></i>
+        </button>
+        </div>
+        
+        <div class="img">
+            <img src="asist.3.jpg">
+            <p>La asistenta te vigila</p>
+        <h5>1,300</h5>
+        <button onclick="event.stopPropagation();agregarAlCarrito('La asistenta te vigila', 1300); mostrarNotificacion('añadido al carrito');">
+            <i class="fas fa-shopping-cart"></i>
+        </button>
+        </div>
+        
+        <div class="img">
+            <img src="chica.jpg">
+            <p>La chica del tren</p>
+        <h5>1,350</h5>
+        <button onclick="event.stopPropagation();agregarAlCarrito('La chica del tren', 1350); mostrarNotificacion('añadido al carrito');">
+            <i class="fas fa-shopping-cart"></i>
+        </button>
+        </div>
+        
+        <div class="img">
+            <img src="damian.jpg">
+            <p>Damian</p>
+        <h5>1,550</h5>
+        <button onclick="event.stopPropagation();agregarAlCarrito('La chica del tren', 1550); mostrarNotificacion('añadido al carrito');">
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+        
+        <div class="img">
+            <img src="paci.jpg">
+            <p>La paciente silenciosa</p>
+        <h5>1,300</h5>
+        <button onclick="event.stopPropagation();agregarAlCarrito('La paciente silenciosa', 1300); mostrarNotificacion('añadido al carrito');">
+            <i class="fas fa-shopping-cart"></i>
+        </button>
+        </div>
+        
+        <div class="img">
+            <img src="codigo.jpg">
+            <p>El código Da Vinci</p>
+        <h5>1,300</h5>
+        <button onclick="event.stopPropagation();agregarAlCarrito('El código Da Vinci', 1300); mostrarNotificacion('añadido al carrito');">
+            <i class="fas fa-shopping-cart"></i>
+        </button>
+        </div>
+        
+        <div class="img">
+            <img src="harry.jpg">
+            <p>La verdad sobre el caso Harry Quebert</p>
+        <h5>1,300</h5>
+        <button onclick="event.stopPropagation();agregarAlCarrito('La verdad sobre el caso Harry Quebert', 1300); mostrarNotificacion('añadido al carrito');">
+            <i class="fas fa-shopping-cart"></i>
+        </button>
+        </div>
+        
+        <div class="img">
+            <img src="per.jpg">
+            <p>Perdida</p>
+        <h5>1,300</h5>
+        <button onclick="event.stopPropagation();agregarAlCarrito('Perdida', 1300); mostrarNotificacion('añadido al carrito');">
+            <i class="fas fa-shopping-cart"></i>
+        </button>
+        </div>
+        
+        <div class="img">
+            <img src="pareja.jpg">
+            <p>La pareja de al lado </p>
+        <h5>1,300</h5>
+        <button onclick="event.stopPropagation();agregarAlCarrito('La pareja de al lado', 1300); mostrarNotificacion('añadido al carrito');">
+            <i class="fas fa-shopping-cart"></i>
+        </button>
+        </div>
+        
+        <div class="img">
+            <img src="viento.jpg">
+            <p>La sombra del viento</p>
+        <h5>1,300</h5>
+        <button onclick="event.stopPropagation();agregarAlCarrito('La sombra del viento', 1300); mostrarNotificacion('añadido al carrito');">
+            <i class="fas fa-shopping-cart"></i>
+        </button>
+        </div>
+        
+
+    </div>
+
+
+
+<style>
+    @media (max-width: 768px) {
+        .galeria {
+display: grid;
+grid-template-columns: repeat(2, 1fr); /* 2 columnas en móviles */
+gap: 10px;
+padding: 10px;
+width: 410px;
+margin-left: 27px;
+
+}
+
+
+#carrito {
+width: 300px;
+}
+    }
+
+.img p {
+    margin-top: 15px;
+}    
+
+img h5 {
+    margin-bottom: 30px;
+}
+</style>
+
+<div id="carrito">
+    <h2>Carrito de Compras</h2>
+    <ul id="listaCarrito"></ul>
+    <p>Total: <span id="totalCarrito">0</span></p>
+    <button class="btn-comprar" onclick="abrirModal()"><a href="carrito.html">Ver carrito</a></button>
+</div>
+
+
+<script>
+    // Lógica del carrito
+    let carrito = [];
+
+    function agregarAlCarrito(titulo, precio) {
+        carrito.push({ titulo, precio });
+        actualizarCarrito();
+    }
+
+    function actualizarCarrito() {
+        const listaCarrito = document.getElementById('listaCarrito');
+        const totalCarrito = document.getElementById('totalCarrito');
+
+        listaCarrito.innerHTML = '';
+        let total = 0;
+
+        carrito.forEach((producto, index) => {
+            total += producto.precio;
+            listaCarrito.innerHTML += `
+                <li>
+                    ${producto.titulo} - $${producto.precio} 
+                    <button onclick="eliminarDelCarrito(${index})">X</button>
+                </li>`;
+        });
+
+        totalCarrito.innerText = total;
+    }
+
+    function eliminarDelCarrito(index) {
+        carrito.splice(index, 1);
+        actualizarCarrito();
+    }
+
+    function buscarLibros() {
+        let input = document.getElementById('searchBar').value.toLowerCase();
+        let libros = document.getElementsByClassName('img');
+
+        for (let i = 0; i < libros.length; i++) {
+            let titulo = libros[i].getElementsByTagName('p')[0].innerText.toLowerCase();
+            if (titulo.includes(input)) {
+                libros[i].style.display = '';
+            } else {
+                libros[i].style.display = 'none';
+            }
+        }
+    }
+
+
+// Función para actualizar el carrito y guardarlo en localStorage
+function actualizarCarrito() {
+    const listaCarrito = document.getElementById('listaCarrito');
+    const totalCarrito = document.getElementById('totalCarrito');
+
+    listaCarrito.innerHTML = '';
+    let total = 0;
+
+    carrito.forEach((producto, index) => {
+        total += producto.precio;
+        listaCarrito.innerHTML += `
+            <li>
+                ${producto.titulo} - $${producto.precio} 
+                <button onclick="eliminarDelCarrito(${index})">X</button>
+            </li>`;
+    });
+
+    totalCarrito.innerText = total;
+
+    // Guarda el carrito en localStorage
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+}
+
+// Recuperar carrito al cargar la página en allbooks.html
+document.addEventListener("DOMContentLoaded", function () {
+    const carritoGuardado = localStorage.getItem('carrito');
+    if (carritoGuardado) {
+        carrito = JSON.parse(carritoGuardado);
+        actualizarCarrito();
+    }
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+<div id="toast-container"></div>
+
+<style>
+.btn-comprar {
+    background: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 10px auto;
+}
+
+.btn-comprar a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btn-comprar:hover {
+    background: #218838;
+}
+
+
+    #toast-container {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    .toast {
+        background-color: #28a745;
+        color: #fff;
+        padding: 15px 20px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        animation: slideIn 0.5s, fadeOut 0.5s 2.5s;
+    }
+
+    .toast i {
+        font-size: 18px;
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeOut {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+</style>
+
+<script>
+    function mostrarNotificacion(mensaje) {
+        const toastContainer = document.getElementById('toast-container');
+        const toast = document.createElement('div');
+        toast.className = 'toast';
+        toast.innerHTML = `<i class="fas fa-check-circle"></i> ${mensaje}`;
+        toastContainer.appendChild(toast);
+
+        // Eliminar la notificación después de 3 segundos
+        setTimeout(() => {
+            toast.remove();
+        }, 3000);
+    }
+
+    
+
+
+
+
+
+
+
+
+
+    
+    // Recuperar el carrito desde LocalStorage o inicializarlo vacío
+letcarrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
+function agregarAlCarrito(titulo, precio) {
+    carrito.push({ titulo, precio });
+    actualizarCarrito();
+}
+
+function actualizarCarrito() {
+    const listaCarrito = document.getElementById('listaCarrito');
+    const totalCarrito = document.getElementById('totalCarrito');
+
+    if (!listaCarrito || !totalCarrito) return; // Verificación para evitar errores
+
+    listaCarrito.innerHTML = '';
+    let total = 0;
+
+    carrito.forEach((producto, index) => {
+        total += producto.precio;
+        const li = document.createElement('li');
+        li.innerHTML = `
+            ${producto.titulo} - $${producto.precio} 
+            <button onclick="eliminarDelCarrito(${index})">X</button>
+        `;
+        listaCarrito.appendChild(li);
+    });
+
+    totalCarrito.innerText = total;
+
+    // Guardar el carrito en LocalStorage
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+}
+
+function eliminarDelCarrito(index) {
+    carrito.splice(index, 1);
+    actualizarCarrito();
+}
+
+// Cargar el carrito cuando la página se abre
+document.addEventListener('DOMContentLoaded', actualizarCarrito);
+</script>
+
+
+
+
+
+
+<style>
+        @media (max-width: 768px) {
+            .galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en móviles */
+    gap: 10px;
+    padding: 10px;
+    width: 410px;
+    margin-left: 23px;
+
+}
+
+.button {
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 8px;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #0056b3;
+    padding: 7px;
+    border: none;
+    transition: all 0.3s ease; 
+}
+
+
+#carrito {
+    width: 280px;
+}
+        }
+</style>
+
+</body>
+</html>

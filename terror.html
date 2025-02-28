@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terror</title>
+</head>
+<body>
+    <link rel="stylesheet" href="todos.css">
+    <a href="#carrito"><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"><a href="#carrito"></a>
+    
+    <div class="search-container">
+        <h1><a href="bookpage.html">BookShelf</a></h1>
+    </div>
+
+<div class="galeria">
+    <div class="img" onclick="showInfo('El color de las cosas invisibles', '')">
+        <img src="caro.jpg">
+        <p>Coraline</p>
+        <h5>1,100</h5>
+        <button onclick="event.stopPropagation();agregarAlCarrito('Coraline', 1100); mostrarNotificacion('Coraline añadido al carrito');">
+        <i class="fas fa-shopping-cart"></i>
+        </button>
+        </div>
+        
+        <div class="img" onclick="showInfo('El color de las cosas invisibles', '')">
+        <img src="it.jpg">
+        <p>Eso (It)</p>
+        <h5>1,250</h5>
+        <button onclick="event.stopPropagation();agregarAlCarrito('Eso (It)', 1250); mostrarNotificacion('Eso (It) añadido al carrito');">
+        <i class="fas fa-shopping-cart"></i>
+        </button>
+        </div>
+        
+        <div class="img" onclick="showInfo('El color de las cosas invisibles', '')">
+        <img src="ecda.jpg">
+            <p>El cementerio de animales</p>
+        <h5>1200</h5>
+        <button onclick="event.stopPropagation();agregarAlCarrito('El cementerio de animales', 1200); mostrarNotificacion('El cementerio de animales añadido al carrito');">
+        <i class="fas fa-shopping-cart"></i>
+        </button>
+        </div>
+        
+        <div class="img" onclick="showInfo('El color de las cosas invisibles', '')">
+        <img src="lcdls.jpeg">
+            <p>La casa de las sombras</p>
+        <h5>1,000</h5>
+        <button onclick="event.stopPropagation();agregarAlCarrito('La casa de las sombras', 1000); mostrarNotificacion('La casa de las sombras añadido al carrito');">
+        <i class="fas fa-shopping-cart"></i>
+        </button>
+        </div>
+        
+        <div class="img" onclick="showInfo('El color de las cosas invisibles', '')">
+        <img src="npdn.jpg">
+            <p>Nuestra parte de noche</p>
+        <h5>1,150</h5>
+        <button onclick="event.stopPropagation();agregarAlCarrito('Nuestra parte de noche', 1150); mostrarNotificacion('Nuestra parte de noche añadido al carrito');">
+        <i class="fas fa-shopping-cart"></i>
+        </button>
+        </div>
+        
+        <div class="img" onclick="showInfo('El color de las cosas invisibles', '')">
+        <img src="hill.jpg">
+            <p>La maldición de hill house</p>
+        <h5>1,050</h5>
+        <button onclick="event.stopPropagation();agregarAlCarrito('La maldición de hill house', 1050); mostrarNotificacion('La maldición de hill house añadido al carrito');">
+        <i class="fas fa-shopping-cart"></i>
+        </button>
+        </div>
+        
+        <div class="img" onclick="showInfo('El color de las cosas invisibles', '')">
+        <img src="misery.jpg.png">
+            <p>MISERY</p>
+        <h5>1,100</h5>
+        <button onclick="event.stopPropagation();agregarAlCarrito('MISERY', 1100); mostrarNotificacion('MISERY añadido al carrito');">
+            <i class="fas fa-shopping-cart"></i>
+        </button>
+        </div>
+        
+        <div class="img" onclick="showInfo('El color de las cosas invisibles', '')">
+        <img src="carrie.jpg">
+            <p>Carrie</p>
+        <h5>1,200</h5>
+        <button onclick="event.stopPropagation();agregarAlCarrito('Carrie', 1200); mostrarNotificacion('Carrie añadido al carrito');">
+        <i class="fas fa-shopping-cart"></i>
+        </button>
+        </div>
+        
+        <div class="img" onclick="showInfo('El color de las cosas invisibles', '')">
+        <img src="insti.jpg">
+            <p>El instituto</p>
+        <h5>1,250</h5>
+        <button onclick="event.stopPropagation();agregarAlCarrito('El intituto', 1250); mostrarNotificacion('El instituto añadido al carrito');">
+        <i class="fas fa-shopping-cart"></i>
+        </button>
+        </div>
+        
+        <div class="img" onclick="showInfo('El color de las cosas invisibles', '')">
+        <img src="revi.jpg">
+            <p>Revival</p>
+        <h5>1,050</h5>
+        <button onclick="event.stopPropagation();agregarAlCarrito('Revival', 1050); mostrarNotificacion('Revival añadido al carrito');">
+        <i class="fas fa-shopping-cart"></i>
+        </button>
+        </div>
+        
+        <div class="img" onclick="showInfo('El color de las cosas invisibles', '')">
+        <img src="inso.jpg">
+            <p>Insomnia</p>
+        <h5>1,150</h5>
+        <button onclick="event.stopPropagation();agregarAlCarrito('Insomnia', 1150); mostrarNotificacion('Insomnia añadido al carrito');">
+        <i class="fas fa-shopping-cart"></i>
+        </button>
+        </div>
+        
+        <div class="img" onclick="showInfo('El color de las cosas invisibles', '')">
+        <img src="res.jpg">
+            <p>El resplandor</p>
+        <h5>1,150</h5>
+        <button onclick="event.stopPropagation();agregarAlCarrito('El resplandor', 1150); mostrarNotificacion('El resplandor añadido al carrito');">
+            <i class="fas fa-shopping-cart"></i>
+        </button>
+        </div>
+        
+        <div class="img" onclick="showInfo('El color de las cosas invisibles', '')">
+        <img src="infernal.jpg">
+        <p>La casa infernal</p>
+        <h5>1,250</h5>
+        <button onclick="event.stopPropagation();agregarAlCarrito('La casa infernal', 1250); mostrarNotificacion('La casa infernal añadido al carrito');">
+        <i class="fas fa-shopping-cart"></i>
+        </button>
+        </div>
+        
+        <div class="img" onclick="showInfo('El hambre', '')">
+        <img src="hambre.jpg">
+            <p>El hambre</p>
+            <h5>1,100</h5>
+            <button onclick="event.stopPropagation();agregarAlCarrito('El hambre', 1250); mostrarNotificacion('El hambre añadido al carrito');">
+            <i class="fas fa-shopping-cart"></i>
+            </button>
+            </div>
+        
+</div>
+
+
+<div id="carrito">
+    <h2>Carrito de Compras</h2>
+    <ul id="listaCarrito"></ul>
+    <p>Total: <span id="totalCarrito">0</span></p>
+    <button class="btn-comprar" onclick="abrirModal()"><a href="carrito.html">Ver carrito</a></button>
+</div>
+
+
+<script>
+    // Lógica del carrito
+    let carrito = [];
+
+    function agregarAlCarrito(titulo, precio) {
+        carrito.push({ titulo, precio });
+        actualizarCarrito();
+    }
+
+    function actualizarCarrito() {
+        const listaCarrito = document.getElementById('listaCarrito');
+        const totalCarrito = document.getElementById('totalCarrito');
+
+        listaCarrito.innerHTML = '';
+        let total = 0;
+
+        carrito.forEach((producto, index) => {
+            total += producto.precio;
+            listaCarrito.innerHTML += `
+                <li>
+                    ${producto.titulo} - $${producto.precio} 
+                    <button onclick="eliminarDelCarrito(${index})">X</button>
+                </li>`;
+        });
+
+        totalCarrito.innerText = total;
+    }
+
+    function eliminarDelCarrito(index) {
+        carrito.splice(index, 1);
+        actualizarCarrito();
+    }
+
+    function buscarLibros() {
+        let input = document.getElementById('searchBar').value.toLowerCase();
+        let libros = document.getElementsByClassName('img');
+
+        for (let i = 0; i < libros.length; i++) {
+            let titulo = libros[i].getElementsByTagName('p')[0].innerText.toLowerCase();
+            if (titulo.includes(input)) {
+                libros[i].style.display = '';
+            } else {
+                libros[i].style.display = 'none';
+            }
+        }
+    }
+
+
+// Función para actualizar el carrito y guardarlo en localStorage
+function actualizarCarrito() {
+    const listaCarrito = document.getElementById('listaCarrito');
+    const totalCarrito = document.getElementById('totalCarrito');
+
+    listaCarrito.innerHTML = '';
+    let total = 0;
+
+    carrito.forEach((producto, index) => {
+        total += producto.precio;
+        listaCarrito.innerHTML += `
+            <li>
+                ${producto.titulo} - $${producto.precio} 
+                <button onclick="eliminarDelCarrito(${index})">X</button>
+            </li>`;
+    });
+
+    totalCarrito.innerText = total;
+
+    // Guarda el carrito en localStorage
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+}
+
+// Recuperar carrito al cargar la página en allbooks.html
+document.addEventListener("DOMContentLoaded", function () {
+    const carritoGuardado = localStorage.getItem('carrito');
+    if (carritoGuardado) {
+        carrito = JSON.parse(carritoGuardado);
+        actualizarCarrito();
+    }
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+<div id="toast-container"></div>
+
+<style>
+.btn-comprar {
+    background: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 10px auto;
+}
+
+.btn-comprar a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btn-comprar:hover {
+    background: #218838;
+}
+
+
+    #toast-container {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    .toast {
+        background-color: #28a745;
+        color: #fff;
+        padding: 15px 20px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        animation: slideIn 0.5s, fadeOut 0.5s 2.5s;
+    }
+
+    .toast i {
+        font-size: 18px;
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeOut {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+</style>
+
+<script>
+    function mostrarNotificacion(mensaje) {
+        const toastContainer = document.getElementById('toast-container');
+        const toast = document.createElement('div');
+        toast.className = 'toast';
+        toast.innerHTML = `<i class="fas fa-check-circle"></i> ${mensaje}`;
+        toastContainer.appendChild(toast);
+
+        // Eliminar la notificación después de 3 segundos
+        setTimeout(() => {
+            toast.remove();
+        }, 3000);
+    }
+
+    
+
+
+
+
+
+
+
+
+
+    
+    // Recuperar el carrito desde LocalStorage o inicializarlo vacío
+letcarrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
+function agregarAlCarrito(titulo, precio) {
+    carrito.push({ titulo, precio });
+    actualizarCarrito();
+}
+
+function actualizarCarrito() {
+    const listaCarrito = document.getElementById('listaCarrito');
+    const totalCarrito = document.getElementById('totalCarrito');
+
+    if (!listaCarrito || !totalCarrito) return; // Verificación para evitar errores
+
+    listaCarrito.innerHTML = '';
+    let total = 0;
+
+    carrito.forEach((producto, index) => {
+        total += producto.precio;
+        const li = document.createElement('li');
+        li.innerHTML = `
+            ${producto.titulo} - $${producto.precio} 
+            <button onclick="eliminarDelCarrito(${index})">X</button>
+        `;
+        listaCarrito.appendChild(li);
+    });
+
+    totalCarrito.innerText = total;
+
+    // Guardar el carrito en LocalStorage
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+}
+
+function eliminarDelCarrito(index) {
+    carrito.splice(index, 1);
+    actualizarCarrito();
+}
+
+// Cargar el carrito cuando la página se abre
+document.addEventListener('DOMContentLoaded', actualizarCarrito);
+</script>
+
+
+
+
+
+
+<style>
+        @media (max-width: 768px) {
+            .galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en móviles */
+    gap: 10px;
+    padding: 10px;
+    width: 410px;
+    margin-left: 23px;
+
+}
+
+.button {
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 8px;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #0056b3;
+    padding: 7px;
+    border: none;
+    transition: all 0.3s ease; 
+}
+
+
+#carrito {
+    width: 280px;
+}
+        }
+</style>
+
+
+
+</body>
+</html>

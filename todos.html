@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros de Romance</title>
+</head>
+<body>
+    
+    <link rel="stylesheet" href="todos.css">
+    <a href="#carrito"><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"><a href="#carrito"></a>
+
+
+
+    <div class="search-container">
+        <h1><a href="bookpage.html">BookShelf</a></h1>
+        <input type="text" id="searchBar" placeholder="Buscar libros..." onkeyup="buscarLibros()">
+    </div>
+    
+<div class="galeria">
+
+    <div class="img" onclick="showInfo('Mil besos tuyos', 'Poppy es una niña risueña y una prodigiosa violonchelista. Rune es misterioso y amante de la fotografía. Su historia juntos comenzó desde que eran muy pequeños, cuando se convirtieron en cómplices de aventuras, secretos y de un amor inquebrantable. Los años han pasado y, tras la muerte de su abuela, Poppy tiene la misión de llenar un frasco con mil besos de la persona que haga a su corazón estallar de amor, y sabe que sólo con Rune podrá iniciar esa gran aventura.')">
+        <img src="mbt.jpg">
+<p>Mil besos tuyos</p>
+<h5>1,150</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Mil besos tuyos', 1150); mostrarNotificacion('Mil besos tuyos añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+    
+
+    <div class="img" onclick="showInfo('Aunque llueva en primavera', 'Existe un lugar en el mundo, entre pastos verdes, ríos helados y calles empedradas, en el que el sol no sale mucho y, aun así, congrega a los habitantes más cálidos que puedas imaginar. Allí vive Lilibeth, nuestra protagonista, que regenta la única escuela del pueblo. Adora a sus alumnos, bordar la ropa que compra con pequeñas flores, el té, cuidar su jardín y reunirse con sus seres queridos. Es una chica afable, dulce y risueña, o eso es lo que te diría cualquier vecino de Havenwish. Cualquiera menos Blake, que llegó al pueblo hace poco y no tiene muy buena opinión sobre la maestra de su hija pequeña. ¿Podrán un concurso de jardines, la rivalidad entre unos vecinos muy peculiares y un puñado de secretos conseguir que no quieras salir nunca de Havenwish?')">
+        <img src="alep.jpg.png">
+        <p>Aunque llueva en primavera</p>
+<h5>1,250</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Aunque llueva en primavera', 1150); mostrarNotificacion('Aunque llueva en primavera añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+
+    </div>
+
+    <div class="img" onclick="showInfo('Hasta que nos quedemos sin estrellas', 'La historia de cómo dos astros colisionan. Liam ha perdido su pasión por YouTube. Está metido en una relación falsa que ha tenido un resultado catastrófico: se ha enamorado de la chica, Michelle, y ahora ella sale a escondidas con su mejor amigo. Maia tiene pesadillas desde la noche del accidente. Todos los días va al hospital a visitar a una estrella cuya luz se tambalea. Un cumpleaños caótico. Una botella de vodka y un youtuber borracho que acaba durmiendo en el coche de una desconocida ¿Qué mejor combinación para conseguir que dos astros colisionen?')">
+        <img src="hqnqse.jpg">
+        <p>Hasta que nos quedemos sin estrellas</p>
+<h5>1,300</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Hasta que nos quedemos sin estrellas', 1300); mostrarNotificacion('Hasta que nos quedemos sin estrellas añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+
+    </div>
+
+    <div class="img" onclick="showInfo('El arte de ser nosotros', 'La vida no es justa, y eso Logan lo sabe muy bien. Después de una dolorosa pérdida, su corazón se ha vuelto hermético, frío e inquebrantable. Por eso no le importa que todos crean que es el malo de la historia. Leah nunca se ha sentido la protagonista de la suya. Vive con la cabeza enterrada en los libros, intentando pasar desapercibida, y se refugia en la gran comunidad de lectores que tiene en internet. Leah no es el tipo de chica que Logan está buscando. Y Logan es la clase de chico que Leah trata de evitar. Quizá por eso lo que hay entre ellos funciona tan bien.')">
+        <img src="eadsn.jpg">
+        <p>El arte de ser nosotros</p>
+<h5>1,350</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('El arte de ser nosotros', 1350); mostrarNotificacion('El arte de ser nosotros añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('Todos los lugares que mantuvimos en secreto', 'Maeve no sabe mucho sobre sí misma. Sólo que no deja de pensar en si su madre cumplió todos sus sueños antes de morir, que la relación con su novio va cada vez peor y que está cansada de que todos sus días sean iguales. Cuando, por un impulso, acaba comprando un billete solo de ida a la otra parte del mundo para volver al pueblo en el que vivió cuando era niña, lo que menos esperaba era reencontrarse allí con el que fue su mejor amigo de la infancia.Connor siempre supo que tarde o temprano Maeve regresaría. Lo que nunca pensó es que fuera a ser así. Tan caótica. Tan perdida. Como si aún estuviera por definir.')">
+        <img src="tllqmes.jpg">
+        <p>Todos los lugares que mantuvimos en secreto</p>
+<h5>1,300</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Todos los lugares que mantuvimos en secreto', 1300); ; mostrarNotificacion('Todos los lugares que mantuvimos en secreto añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('Lo que la nieve susurra al caer', '¿Y si para seguir adelante tuvieras que retroceder al punto donde todo comenzó? Para Hunter, las canciones que compone son un refugio. Acordes que hablan de sueños y miedos. De ganas y carencias. Sin embargo, esa inspiración enmudece cuando encuentra una carta manuscrita en su buzón, que lo obliga a cuestionarse todo lo que sabe sobre sí mismo. La vida de Willow se ha convertido en una caja de momentos desordenados y sueños frustrados. Siente que ha perdido su lugar en el mundo y ya no recuerda a esa persona que siempre quiso ser. Mientras la nieve cae silenciosa, Hunter y Willow descubrirán que el destino no siempre tiene la última palabra y que los momentos, buenos o malos, nos van convirtiendo en todo lo que somos')">
+    <img src="lqslnac.jpg">
+        <p>Lo que la nieve susurra al caer</p>
+<h5>1,300</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Lo que la nieve susurra al caer', 1300); mostrarNotificacion('Lo que la nieve susurra al caer añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('La magia de las casualidades imposibles', '¿Y si no existen las casualidades y todo pasa por algo? Céline ha estado enferma desde pequeña, y eso ha condicionado su presente y desdibujado su futuro. Hasta que la vida le da una segunda oportunidad y su pequeño mundo se llena de esperanza. Julien siente que ha perdido el control de su vida y que su mundo se desmorona. Ya no soporta las luces, el ruido ni las prisas de una ciudad como París. Un tropiezo fortuito hará que las vidas de Céline y Julien se unan. O no. Porque hay casualidades que conectan a las personas, pero hay otras que las separan irremediablemente.')">
+        <img src="magia.jpg">
+        <p>La magia de las casualidades imposibles</p>
+<h5>1,350</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('La magia de las casualidades imposibles', 1350); mostrarNotificacion('La magia de las casualidades imposibles añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('Cuando no queden más estrellas que contar', '¿Cómo se ignora lo que late en tu interior? ¿Cómo se recupera el rumbo de una vida trazada por una mentira? Desde muy pequeña, Maya se ha sacrificado en cuerpo y alma por el ballet. Trabaja como solista en la Compañía Nacional de Danza y los ballets más prestigiosos han puesto sus ojos en ella. Sin embargo, un grave accidente acaba con su futuro prometedor. El único mundo que Maya conoce se ha derrumbado. Su abuela, que ha guiado cada uno de sus pasos, la culpa por lo sucedido. La ausencia de su madre pesa más que nunca. Y un hallazgo fortuito abrirá una profunda herida. Un viaje inesperado, una chica incompleta y una verdad escondida en una caja de música. A veces, dejar que suceda es todo lo que necesitas.')">
+        <img src="cnqmeqc.jpg">
+        <p>Cuando no queden más estrellas que contar</p>
+<h5>1,300</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Cuando no queden más estrellas que contar', 1300); mostrarNotificacion('Cuando no queden más estrellas que contar añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('Cuando no queden más estrellas que contar', '¿Cómo se ignora lo que late en tu interior? ¿Cómo se recupera el rumbo de una vida trazada por una mentira? Desde muy pequeña, Maya se ha sacrificado en cuerpo y alma por el ballet. Trabaja como solista en la Compañía Nacional de Danza y los ballets más prestigiosos han puesto sus ojos en ella. Sin embargo, un grave accidente acaba con su futuro prometedor. El único mundo que Maya conoce se ha derrumbado. Su abuela, que ha guiado cada uno de sus pasos, la culpa por lo sucedido. La ausencia de su madre pesa más que nunca. Y un hallazgo fortuito abrirá una profunda herida. Un viaje inesperado, una chica incompleta y una verdad escondida en una caja de música. A veces, dejar que suceda es todo lo que necesitas.')">
+        <img src="cnqmee.jpg">
+        <p>Cuando no queden... (Edición especial)</p>
+<h5>1,500</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Cuando no queden más estrellas que contar (Edición especial)', 1500); mostrarNotificacion('añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('Tú y otros desastres naturales', 'Harper ha planificado hasta el último detalle de su futuro. Pronto acabará sus estudios y logrará el trabajo por el que tanto se ha esforzado. Tendrá la vida que desea. Sin embargo, una triste pérdida hará que su plan perfecto, aquello que creía querer más que nada, se transforme de nuevo en confusión, dudas e inseguridades. Porque los secretos no pueden guardarse para siempre. Porque hay caminos destinados a cruzarse. Porque una sola decisión puede cambiarlo todo y nada da más miedo que arriesgarse por tus sueños. Porque la vida no se trata de sobrevivir a la tormenta, sino de aprender a bailar bajo ella.')">
+        <img src="tyodn.jpg">
+        <p>Tú y otros desastres naturales</p>
+<h5>1,100</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Tú y otros desastres naturales', 1100); mostrarNotificacion('Tú y otros desastres naturales añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('Bajo la misma estrella', 'A Hazel y a Gus les gustaría tener vidas más corrientes. Algunos dirían que no han nacido con estrella, que su mundo es injusto. Hazel y Gus son solo adolescentes, pero si algo les ha enseñado el cáncer que ambos padecen es que no hay tiempo para lamentaciones, porque, nos guste o no, solo existe el hoy y el ahora. Y por ello, con la intención de hacer realidad el mayor deseo de Hazel --conocer a su escritor favorito--, cruzarán juntos el Atlántico para vivir una aventura contrarreloj, tan catártica como desgarradora. Destino: Amsterdam, el lugar donde reside el enigmático y malhumorado escritor, la única persona que tal vez pueda ayudarles a ordenar las piezas del enorme puzle del que forman parte...')">
+        <img src="blme.jpg">
+        <p>Bajo la misma estrella</p>
+<h5>1,000</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Bajo la misma estrella', 1000); mostrarNotificacion('Bajo la misma estrella al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('Yo también no es te quiero', 'William Anderson es el escritor de fantasía más exitoso de la década, con millones de lectores enganchados a su pluma. Raquel García es una joven española que llegó a Nueva York persiguiendo su sueño: trabajar en una de las editoriales más importantes del país. Lo que no imaginaba es que, para conseguirlo, debería lidiar con Anderson después de que este, prometa en un reconocido programa de televisión que su próximo libro será el best seller de romántica del año. William no está dispuesto a dejarse corregir y Raquel no va a pasarle ni una. Condenados a entenderse, tendrán que trabajar juntos para superar un gran sacar adelante la novela que cambiará sus vidas.')">
+        <img src="ytnetq.jpg">
+        <p>Yo también no es te quiero</p>
+<h5>1,300</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Yo también no es te quiero', 1300); mostrarNotificacion('Yo también no es te quiero añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+
+    <div class="img" onclick="showInfo('Quizá sí quiero', 'Todo lo que hay que saber sobre Zac Anderson es que, para él, el amor es la peor enfermedad que existe. Es que es un ligón empedernido que nunca se enamora y a cuya sonrisa encantadora solo se ha resistido una mujer. Y, que es médico y va a mudarse a Manhattan. Grace Harris acaba de ascender a editora jefa y desde el primer día las catástrofes se suceden en el trabajo de sus sueños. Cuando menos se lo espere, Zac Anderson estará dispuesto a ayudarla si ella le acompaña a llevar su coche desde California a Nueva York. Grace siempre ha querido vivir una comedia romántica. Por eso acepta el trato. Son demasiado incompatibles para fijarse el uno en el otro, pero un viaje por carretera podría demostrarles que están equivocados.')">
+        <img src="qsq.jpg">
+        <p>Quizá sí quiero</p>
+<h5>1,300</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Quizá sí quiero', 1300); mostrarNotificacion('Quizá sí quiero añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('Binding 13 (Edición especial)', 'Hasta ahora han permanecido en lados opuestos del campo, pero cuando sus dos mundos choquen, nada volverá a ser lo mismo. Johnny Kavanagh lo tiene todo a su favor. En el campo de rugby es una fuerza imparable. Ha nacido para el estrellato y nada detendrá su camino a la cima. La vida nunca ha sido fácil para Shannon Lynch. Acosada y torturada por sus antiguas compañeras, llega a Tommen a mitad del año escolar, rezando por un nuevo comienzo y desesperada por librarse de los demonios de su pasado. Johnny y Shannon tendrán que enfrentarse a todos los obstáculos que amenazarán el comienzo de una relación que puede ser mucho más...')">
+        <img src="bindee.jpg">             
+        <p>Binding 13 (Edición especial)</p>
+<h5>1,500</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Binding 13 (Edición especial)', 1500); mostrarNotificacion('Binding 13 (Edición esp) añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('Binding 13 ', 'Hasta ahora han permanecido en lados opuestos del campo, pero cuando sus dos mundos choquen, nada volverá a ser lo mismo. Johnny Kavanagh lo tiene todo a su favor. En el campo de rugby es una fuerza imparable. Ha nacido para el estrellato y nada detendrá su camino a la cima. La vida nunca ha sido fácil para Shannon Lynch. Acosada y torturada por sus antiguas compañeras, llega a Tommen a mitad del año escolar, rezando por un nuevo comienzo y desesperada por librarse de los demonios de su pasado. Johnny y Shannon tendrán que enfrentarse a todos los obstáculos que amenazarán el comienzo de una relación que puede ser mucho más...')">
+        <img src="binfing.jpg">             
+        <p>Binding 13</p>
+<h5>1,300</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Binding 13', 1300); mostrarNotificacion('Binding 13 añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('Keeping 13', 'Lo que viene después es el verdadero desafío... Tras una devastadora lesión que lo ha mandado al banquillo, Johnny Kavanagh se aferra como puede a sus sueños. Perdido, inseguro y necesitado de consuelo, decide desentrañar los misterios que envuelven a la chica de ojos azules en la que no puede dejar de pensar ni un minuto. Guardar un secreto nunca ha sido un problema para Shannon Lynch. La única forma de protegerse es levantar un muro a su alrededor. Solo un chico será capaz de saltar ese muro, el mismo que le ha robado el corazón. Sin embargo, están a punto de salir a la luz secretos que cambiarán sus vidas para siempre.')">
+        <img src="keep.jpg">
+        <p>Keeping 13</p>
+<h5>1,300</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Keeping 13', 1300); mostrarNotificacion('Keeping 13 añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img"onclick="showInfo('Saving 6', 'Él es un chico perdido. Ella es la chica que podría convertirse en el hogar que nunca tuvo. Joey Lynch, el segundo hijo de un matrimonio roto, lleva toda la vida recogiendo los pedazos de una familia en descomposición. Cuando su hermano mayor, Darren, abandona la ciudad, Joey se ve obligado con tan solo doce años a asumir el papel de protector de su madre y sus hermanos pequeños. Atormentado por el odio que siente hacia sí mismo y furioso con el mundo, afronta la vida adolescente y el inquebrantable sentido del deber que le profesa a su familia mientras avanza peligrosamente hacia una vida de adicción que amenaza con engullirlo por completo. La única luz en ese mar de oscuridad es la vivaracha hija de su jefe, una chica que nunca se echa atrás y que da la casualidad de que va a su clase.')">
+        <img src="sav.jpg">
+        <p>Saving 6</p>
+<h5>1,300</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Saving 6', 1300); mostrarNotificacion('Saving 6 añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('Redeeming 6', 'Mientras el mundo se desmorona a su alrededor, la vida de Joey Lynch es más turbulenta que nunca. Desesperado por sentirse digno de la única persona en la que ha confiado jamás, Joey lucha por alejarse de un entorno que amenaza con destruirlo todo. Pero, con tanto en su contra, ¿logrará mantenerse a flote? Sin intención de abandonar al chico al que ama, Aoife Molloy pelea por salvarlo de la autodestrucción. Ahogándose en un mundo que no comprende, sin otra guía que los dictados de su corazón, se niega a darle la espalda a Joey incluso cuando parece que tienen todas las de perder. Pese al sufrimiento y el horror, Aoife y Joey nunca han dejado de apoyarse el uno al otro, ¿será esta vez diferente?')">
+        <img src="red.jpg">
+        <p>Redeeming 6</p>
+<h5>1,300</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Redeeming 6', 1300); mostrarNotificacion('Redeeming añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('Los dos amores de mi vida', 'Emma Blair, una mujer que reconstruyó su vida tras la trágica desaparición de su marido Jesse en un accidente, enfrenta una encrucijada inesperada. Años después, tras haber encontrado el amor nuevamente con Sam, un viejo amigo, y comprometerse con él, descubre que Jesse está vivo y ha estado intentando regresar a casa. Ahora, Emma debe decidir entre dos hombres que representan distintas etapas de su vida y entender qué significa realmente amar. En este viaje emocional, Emma explora el verdadero significado del amor y la búsqueda de su propia felicidad.')">
+        <img src="ldadmv.jpg">
+        <p>Los dos amores de mi vida</p>
+<h5>1,300</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Los dos amores de mi vida', 1300); mostrarNotificacion('Los dos amores de mi vida añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('Nosotros en la luna', 'Una noche en París. Dos caminos entrelazándose. Cuando Rhys y Ginger se conocen en las calles de la ciudad de la luz, no imaginan que sus vidas se unirán para siempre, a pesar de la distancia y de que no puedan ser más diferentes. Ella vive en Londres y a veces se siente tan perdida que se ha olvidado hasta de sus propios sueños. Él es incapaz de quedarse quieto en ningún lugar y cree saber quién es. Y cada noche su amistad crece entre emails llenos de confidencias, dudas e inquietudes. Pero ¿qué ocurre cuando el paso del tiempo pone a prueba su relación? ¿Es posible colgarse de la luna junto a otra persona sin poner en riesgo el corazón?')">
+        <img src="nel.jpg">
+        <p>Nosotros en la luna</p>
+<h5>1,300</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Nosotros en la luna', 1300); mostrarNotificacion('Nosotros en la luna añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+ 
+    <div class="img" onclick="showInfo('Nosotros en la luna (Edición especial)', 'Una noche en París. Dos caminos entrelazándose. Cuando Rhys y Ginger se conocen en las calles de la ciudad de la luz, no imaginan que sus vidas se unirán para siempre, a pesar de la distancia y de que no puedan ser más diferentes. Ella vive en Londres y a veces se siente tan perdida que se ha olvidado hasta de sus propios sueños. Él es incapaz de quedarse quieto en ningún lugar y cree saber quién es. Y cada noche su amistad crece entre emails llenos de confidencias, dudas e inquietudes. Pero ¿qué ocurre cuando el paso del tiempo pone a prueba su relación? ¿Es posible colgarse de la luna junto a otra persona sin poner en riesgo el corazón?')">
+        <img src="neleee.jpg">
+        <p>Nosotros en la luna (Edición ilustrada)</p>
+<h5>1,450</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Nosotros en la luna (edición especial)', 1300); mostrarNotificacion('Nosotros en la luna (Edición esp) añadido al carrito');">
+  <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('El mapa de los anhelos', 'Grace Peterson, una joven acostumbrada a la monotonía y la invisibilidad, pierde a su hermana, el eje de su existencia. Su vida cambia al descubrir el juego El mapa de los anhelos, que la lleva a buscar a Will Tucker. Juntos emprenden un viaje lleno de emociones, secretos y sueños olvidados, enfrentando la pregunta de si es posible avanzar cuando las verdades ocultas salen a la luz.')">
+        <img src="emdla.jpg">
+        <p>El mapa de los anhelos</p>
+<h5>1,300</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('El mapa de los anhelos', 1300); mostrarNotificacion('El mapa de los anhelos añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('Donde todo brilla', '¿Y si lo único que necesitamos para ser felices es descubrir el brillo de las cosas intangibles? Nicki Aldrich y River Jackson han sido inseparables desde que llegaron al mundo con cuarenta y siete minutos de diferencia. Ella lo hizo envuelta en polvo de hadas. Él como si fuese un meteoro en llamas. El pequeño pueblo costero donde crecieron se convirtió en el escenario de sus paseos en bicicleta, las tardes en la casa del árbol y los primeros amores, secretos y dudas. Sin embargo, con el paso de los años, River sueña con escapar de aquel rincón perdido donde todo gira alrededor de la tradicional pesca de la langosta y Nicki anhela encontrar su lugar en el mundo. Para lograrlo, River y Nicki tendrán que bucear en las profundidades del corazón, rescatar pedazos de lo que fueron y entender aquello que rompieron. Y quizá así, logren descubrir quiénes son ahora y recordar el brillo de las cosas intangibles.')">
+        <img src="dtb.jpg">
+        <p>Donde todo brilla</p>
+<h5>1,300</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Donde todo brilla', 1300); mostrarNotificacion('Donde todo brilla añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('Pétalos de papel (Edición especial)','Dani, una chica común, es transportada accidentalmente a Albión, un mundo gobernado por una nobleza hipócrita donde los visitantes son tratados como sirvientes. Allí conoce a Marcus, heredero de los Abberlain y único capaz de devolverla a casa. Pero su don, codiciado por muchos, pone en peligro tanto a Marcus como a Dani, en un mundo lleno de intrigas, secretos y máscaras.')">
+        <img src="pdpee.jpg">
+        <p>Pétalos de papel (Edición especial)</p>
+<h5>1,600</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Pétalos de papel (Edición especial)', 1600); mostrarNotificacion('Pétalos de papel (Edición especial) añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('Pétalos de papel','Dani, una chica común, es transportada accidentalmente a Albión, un mundo gobernado por una nobleza hipócrita donde los visitantes son tratados como sirvientes. Allí conoce a Marcus, heredero de los Abberlain y único capaz de devolverla a casa. Pero su don, codiciado por muchos, pone en peligro tanto a Marcus como a Dani, en un mundo lleno de intrigas, secretos y máscaras.')">
+        <img src="pdp.jpg">
+        <p>Pétalos de papel</p>
+<h5>1,300</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Pétalos de papel', 1300); mostrarNotificacion('Pétalos de papel añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('El color de las cosas invisibles', 'Los dos quieren tener razón. Y los dos saben que se equivocan. Un enemies-to-lovers que te hará creer en el amor. Rain y Jack se odian. Rain y Jack pertenecen a planetas distintos. Rain y Jack no pueden tener menos cosas en común. Y, sin embargo, no dejan de cruzarse. Una y otra vez. Primero en el instituto, luego en un concierto e, inesperadamente, también unos años después, cuando ya creían que no volverían a encontrarse. Incluso se ven empujados a compartir una noche en una casa perdida en mitad del bosque. Rain piensa que las casualidades no existen. Jack, que las causalidades no lo explican todo. Los dos quieren tener razón. Y los dos saben que se equivocan. Y ambos intuyen que, sea cual sea la verdad, cuando se trata de amor no hay teoría científica que haga entender el mecanismo de un corazón cuando otro lo sacude.')">
+        <img src="ecdlci.jpg">
+        <p>El color de las cosas invisibles</p>
+<h5>1,300</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('El color de las cosas invisibles', 1300); mostrarNotificacion('El color de las cosas invisibles añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('Los veranos olvidados', 'Vera, Sara y Alexander eran inseparables. Siendo adolescentes, habían establecido un vínculo especial, una amistad inquebrantable; habían trenzado sus vidas con nudos en apariencia irrompibles. ¿Por qué entonces, en la actualidad, Sara se siente sola? ¿Por qué los veranos en el lago ya no son tan mágicos como en algún momento fueron? Una novela sobre esa amistad profunda que se forja en la juventud y que sobrevive incluso al paso más cruel del tiempo. Sobre el miedo, el rencor, el fracaso. Pero, también, sobre el amor; el amor por la familia, por los amigos, por el hogar, por aquellas personas que poseen la capacidad de hacer que tu mundo gire o deje de hacerlo. Sobre un amor de verano y sobre el amor de toda una vida.')">
+    <img src="lvo.jpg">
+        <p>Los veranos olvidados</p>
+<h5>1,300</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Los veranos olvidados', 1300); mostrarNotificacion('Los veranos olvidados añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+
+    <div class="img" onclick="showInfo('Te espero en el fin del mundo', 'Violet y Levi se conocen desde niños. Él sueña con crear un hogar. Ella, con escapar del suyo. Son mejores amigos, siempre están el uno para el otro y, cuando empiezan a crecer, se dan cuenta de que sus sentimientos también lo hacen. Intensos. Imparables. Únicos. Pero Levi desea echar raíces entre montañas mientras que Violet quiere volar muy alto y comerse el mundo. Es posible que no existan dos personas más incompatibles que encajen mejor. Una cabaña abandonada, una colección de figuras de madera y un amor de los que marcan toda una vida. El de Levi, el chico que hacía muchas preguntas, y el de Vi, la chica que tenía todas las respuestas.')">
+    <img src="teeefdm.jpg">
+        <p>Te espero en el fin del mundo</p>
+<h5>1,300</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('Te espero en el fin del mundo', 1300); mostrarNotificacion('Te espero en el fin del mundo añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('El faro de los amores dormidos', 'Varela de Mar es un pueblo pequeño y tranquilo. Doscientos treinta y tres habitantes. Una playa que desaparece cuando sube la marea. Un faro abandonado. Por eso Alba no lo visita desde hace cinco años. Bueno, por eso y porque allí fue donde aprendió lo que duele el amor y la herida aún escuece. Sin embargo, en Varela también está Pelayo, su abuelo, que ha comenzado a olvidar y que ahora la necesita. Y también los recuerdos que dejó en sus calles cuando se marchó sin mirar atrás. Y Enol. El chico de las conversaciones raras, la obsesión por las mareas y que parece haber nacido en la época equivocada. Un regreso inesperado, un faro lleno de secretos y dos historias inacabadas que, quizá, se merecen la oportunidad de un nuevo final.')">
+    <img src="efdlap.jpg">
+    <p>El faro de los amores dormidos</p>
+<h5>1,300</h5>
+<button onclick="event.stopPropagation();agregarAlCarrito('El faro de los amores dormidos', 1300); mostrarNotificacion('El faro de los amores dormidos añadido al carrito');">
+    <i class="fas fa-shopping-cart"></i>
+</button>
+    </div>
+
+    <div class="img" onclick="showInfo('Orgullo y prejuicio', 'El libro nos enseña cómo en esta época las relaciones personales podían ser mezquinas, pues su principal motivación era la riqueza y el estatus social. El ingenio y la ironía con la que Austen narra esta historia dejará al lector enganchado desde el primer vistazo, pues la escritora narra, de una manera brillante, la hipocresía del momento y la dureza de ser mujer de este tiempo, a través de una historia que será lo opuesto a lo que estamos acostumbrados en las novelas románticas y servirá de guía para muchas otras comedias en tiempos posteriores.')">
+    <img src="oyp.jpg">
+        <p>Orgullo y prejuicio (Edición especial)</p>
+    <h5>1,300</h5>
+    <button onclick="event.stopPropagation();agregarAlCarrito('Orgullo y prejuicio', 1300); mostrarNotificacion('Orgullo y prejuicio añadido al carrito');">
+        <i class="fas fa-shopping-cart"></i>
+    </button>
+        </div>
+
+        <div class="img" onclick="showInfo('La teoría de los archipielagos', '«La teoría de los archipiélagos viene a decir que todos somos islas, llegamos solos a este mundo y nos vamos exactamente igual, pero necesitamos tener otras islas alrededor para sentirnos felices en medio de ese mar que une tanto como separa. Yo siempre he pensado que sería una isla pequeñita, de esas en las que hay tres palmeras, una playa, dos rocas y poco más; me he sentido invisible durante gran parte de mi vida. Pero entonces apareciste tú, que sin duda serías una isla volcánica llena de grutas y flores. Y es la primera vez que me pregunto si dos islas pueden tocarse en la profundidad del océano, aunque nadie sea capaz de verlo. Si eso existe, si entre los corales y sedimentos y lo que sea que nos ancla en medio del mar hay un punto de unión, sin duda somos tú y yo. Y, si no es así, estamos tan cerca que estoy convencido de poder llegar nadando hasta ti».')">
+        <img src="ltdla.jpg">
+            <p>La teoría de los archipielagos</p>
+            <h5>1,250</h5>
+            <button onclick="event.stopPropagation();agregarAlCarrito('La teoría de los archipielagos', 1250); mostrarNotificacion('La teoría de los archipielagos añadido al carrito');">
+                <i class="fas fa-shopping-cart"></i>
+            </button>
+       </div>
+
+       <div class="img" onclick="showInfo('Antes de diciembre', 'Para Jenna Brown, su primer año en la Universidad suponía alejarse de su familia y sus amigos y enfrentarse al mundo por primera vez en su vida. Su novio le había dejado claras sus intenciones: a partir de ese momento, tenían una relación a distancia y abierta. Ambos podían hacer lo que quisieran porque sabían que se querían el uno al otro. Así que no pasaba nada si no dejaba de acercarse al mejor amigo del novio de su compañera de habitación, ¿no? De todos modos, ¿que importaba si estaba con el en ausencia de su novio? Todo volvería a la normalidad en diciembre. ¿Cambiaría algo? Tenía hasta entonces para descubrirlo.')">
+       <img src="add.jpg">
+    <p>Antes de diciembre</p>
+    <h5>1,250</h5>
+    <button onclick="event.stopPropagation();agregarAlCarrito('Antes de diciembre', 1250); mostrarNotificacion('Antes de diciembre añadido al carrito');">
+        <i class="fas fa-shopping-cart"></i>
+    </button>
+</div>
+
+<div class="img" onclick="showInfo('Después de diciembre', 'Todo cambiará... después de diciembre. El tiempo es algo relativo. Para algunos pasa ás rápido, para otros, no tanto. A Jenna Brown ')">
+<img src="ddd.jpg">
+    <p>Después de diciembre</p>
+    <h5>1,250</h5>
+    <button onclick="event.stopPropagation();agregarAlCarrito('Después de diciembre', 1250); mostrarNotificacion('Después de diciembre añadido al carrito');">
+        <i class="fas fa-shopping-cart"></i>
+    </button>
+</div>
+
+<div class="img" onclick="showInfo('Tres meses', '')">
+<img src="tm.jpg">
+    <p>Tres meses</p>
+    <h5>1,250</h5>
+    <button onclick="event.stopPropagation();agregarAlCarrito('Tres meses', 1250); mostrarNotificacion('Tres meses añadido al carrito');">
+        <i class="fas fa-shopping-cart"></i>
+    </button>
+</div>
+
+<div class="img" onclick="showInfo('Boulevard', '')">
+<img src="bou.jpg">
+    <p>Boulevard</p>
+    <h5>1,250</h5>
+    <button onclick="event.stopPropagation();agregarAlCarrito('Boulevard', 1250); mostrarNotificacion('Boulevard añadido al carrito');">
+        <i class="fas fa-shopping-cart"></i>
+    </button>
+</div>
+
+
+<div class="img" onclick="showInfo('Novia', 'Misery Lark se casa con el alfa licántropo Lowe Moreland por razones secretas. En territorio enemigo, hará todo por recuperar lo que perdió.')">
+<img src="novia.jpg">
+    <p>Novia</p>
+    <h5>1,400</h5>
+    <button onclick="event.stopPropagation();agregarAlCarrito('Novia', 1250); mostrarNotificacion('Novia añadido al carrito');">
+        <i class="fas fa-shopping-cart"></i>
+</div>
+
+<div class="img" onclick="showInfo('La química del amor', '')">
+    <img src="lqda.jpg">
+    <p>La química del amor</p>
+    <h5>1,250</h5>
+    <button onclick="event.stopPropagation();agregarAlCarrito('La teoría del amor', 1250); mostrarNotificacion('La química del amor añadido al carrito');">
+        <i class="fas fa-shopping-cart"></i>
+</div>
+
+
+<div class="img" onclick="showInfo('La teoría del amor', '')">
+<img src="ltda.jpg">
+    <p>La teoría del amor</p>
+    <h5>1,250</h5>
+    <button onclick="event.stopPropagation();agregarAlCarrito('La teoría del amor', 1250); mostrarNotificacion('La teoría del amor añadido al carrito');">
+        <i class="fas fa-shopping-cart"></i>
+</div>
+
+
+<div class="img" onclick="showInfo('La hipótesis del amor', '')">
+<img src="hipo.jpg">
+    <p>La hipótesis del amor</p>
+    <h5>1,250</h5>
+    <button onclick="event.stopPropagation();agregarAlCarrito('La hipótesis del amor', 1250); mostrarNotificacion('La hipótesis del amor añadido al carrito');">
+        <i class="fas fa-shopping-cart"></i>
+</div>
+
+<div class="img" onclick="showInfo('Jaque mate el amor', '')">
+<img src="Jaque.jpg">
+    <p>Jaque mate el amor</p>
+    <h5>1,250</h5>
+    <button onclick="event.stopPropagation();agregarAlCarrito('Jaque mate el amor', 1250); mostrarNotificacion('Jaque Mate el amor añadido al carrito');">
+        <i class="fas fa-shopping-cart"></i>
+</div>
+
+<div class="img" onclick="showInfo('Un cuento perfecto', '¿Qué sucede cuando descubres que el final de tu cuento no es como soñabas? Érase una vez una mujer que lo tenía todo y un chico que no tenía nada. Érase una vez una historia de amor entre el éxito y la duda. Érase una vez un cuento perfecto.')">
+<img src="ucp.jpg">
+    <p>Un cuento perfecto</p>
+    <h5>1,350</h5>
+    <button onclick="event.stopPropagation();agregarAlCarrito('Un cuento perfecto', 1300); mostrarNotificacion('Un cuento perfecto añadido al carrito');">
+        <i class="fas fa-shopping-cart"></i>
+</div>
+
+<div class="img" onclick="showInfo('Un cuento perfecto (Edición especial)', '¿Qué sucede cuando descubres que el final de tu cuento no es como soñabas? Érase una vez una mujer que lo tenía todo y un chico que no tenía nada. Érase una vez una historia de amor entre el éxito y la duda. Érase una vez un cuento perfecto.')">
+    <img src="ucpee.jpg">
+    <p>Un cuento perfecto (Edición especial)</p>
+    <h5>1,550</h5>    
+    <button onclick="event.stopPropagation();agregarAlCarrito('Un cuento perfecto (Edición especial)', 1550); mostrarNotificacion('Un cuento perfecto (Edición especial) añadido al carrito');">
+        <i class="fas fa-shopping-cart"></i>
+</div>
+
+<div class="img" onclick="showInfo('Rey de la ira', '')">
+    <img src="rdli.jpg">
+    <p>Rey de la ira</p>
+    <h5>1,350</h5>
+    <button onclick="event.stopPropagation();agregarAlCarrito('Rey de la ira', 1350); mostrarNotificacion('Rey de la ira añadido al carrito');">
+        <i class="fas fa-shopping-cart"></i>
+</div>
+
+<div class="img" onclick="showInfo('Rey de la soberbia', '')">
+<img src="rdls.jpg">
+    <p>Rey de la soberbia</p>
+    <h5>1,350</h5>
+    <button onclick="event.stopPropagation();agregarAlCarrito('Rey de la soberbia', 1350); mostrarNotificacion('Rey de la codicia añadido al carrito');">
+        <i class="fas fa-shopping-cart"></i>
+</div>
+
+<div class="img" onclick="showInfo('Rey de la codicia', '')">
+<img src="rdlc.jpg">
+    <p>Rey de la codicia</p>
+    <h5>1,350</h5>
+    <button onclick="event.stopPropagation();agregarAlCarrito('Rey de la codicia', 1350); mostrarNotificacion('Rey de la codicia añadido al carrito');">
+        <i class="fas fa-shopping-cart"></i>
+</div>
+
+<div class="img" onclick="showInfo('Twisted Love', '')">
+<img src="tl.jpg">
+    <p>Twisted Love</p>
+    <h5>1,350</h5>
+    <button onclick="event.stopPropagation();agregarAlCarrito('Twisted Love', 1350); mostrarNotificacion('Twisted Love añadido al carrito');">
+        <i class="fas fa-shopping-cart"></i>
+</div>
+
+<div class="img" onclick="showInfo('Twisted Games', '')">
+<img src="tg.jpg">
+    <p>Twisted Games</p>
+    <h5>1,350</h5>
+    <button onclick="event.stopPropagation();agregarAlCarrito('Twisted Games', 1350); mostrarNotificacion('Twisted Games añadido al carrito');">
+        <i class="fas fa-shopping-cart"></i>
+</div>
+
+<div class="img" onclick="showInfo('Twisted Hate', '')">
+<img src="tha.jpg">
+    <p>Twisted Hate</p>
+    <h5>1,350</h5>
+    <button onclick="event.stopPropagation();agregarAlCarrito('Twisted Hate', 1350); mostrarNotificacion('Twisted Hate añadido al carrito');">
+        <i class="fas fa-shopping-cart"></i>
+</div>
+
+<div class="img" onclick="showInfo('Twisted Lies', '')">
+<img src="tlies.jpg">
+    <p>Twisted Lies</p>
+    <h5>1,350</h5>
+    <button onclick="event.stopPropagation();agregarAlCarrito('Twisted Lies', 1350); mostrarNotificacion('Twisted Lies añadido al carrito');">
+        <i class="fas fa-shopping-cart"></i>
+</div>
+
+<div class="img" onclick="showInfo('Culpables', '')">
+<img src="packculpa.jpg">
+    <p>Culpables (pack)</p>
+    <h5>3,550</h5>
+    <button onclick="event.stopPropagation();agregarAlCarrito('Culpables (pack)', 3550); mostrarNotificacion('Culpables (pack) añadido al carrito');">
+        <i class="fas fa-shopping-cart"></i>
+</div>
+
+<div class="img" onclick="showInfo('Culpa mía', '')">
+<img src="cm.jpg">
+    <p>Culpa mía</p>
+    <h5>1,150</h5>
+    <button onclick="event.stopPropagation();agregarAlCarrito('Culpa mía', 1150); mostrarNotificacion('Culpa mía añadido al carrito');">
+        <i class="fas fa-shopping-cart"></i>
+</div>
+
+<div class="img" onclick="showInfo('Culpa tuya', '')">
+<img src="ct.jpg">
+    <p>Culpa tuya</p>
+    <h5>1,150</h5>
+    <button onclick="event.stopPropagation();agregarAlCarrito('Culpa tuya', 1150); mostrarNotificacion('Culpa tuya añadido al carrito');">
+        <i class="fas fa-shopping-cart"></i>
+</div>
+
+<div class="img" onclick="showInfo('Culpa nuestra', '')">
+<img src="cn.jpg">
+    <p>Culpa nuestra</p>
+    <h5>1,150</h5>
+    <button onclick="event.stopPropagation();agregarAlCarrito('Culpa nuestra', 1150); mostrarNotificacion('Culpa nuestra añadido al carrito');">
+        <i class="fas fa-shopping-cart"></i>
+</div>
+</div>
+
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <button class="close-btn" onclick="closePopup()">×</button>
+        <h3 id="popup-title">Título del libro</h3>
+        <p id="popup-description">Descripción del libro</p>
+    </div>
+</div>
+
+<script>
+    function showInfo(title, description) {
+        const popup = document.getElementById('popup');
+        document.getElementById('popup-title').textContent = title;
+        document.getElementById('popup-description').textContent = description;
+        popup.classList.add('visible');
+    }
+
+    function closePopup() {
+        const popup = document.getElementById('popup');
+        popup.classList.remove('visible');
+    }
+</script>
+
+    
+
+
+
+
+<script>
+
+function buscarLibros() {
+    // Obtener el valor del campo de búsqueda
+    let input = document.getElementById('searchBar').value.toLowerCase();
+    
+    // Obtener todos los contenedores de las imágenes
+    let libros = document.getElementsByClassName('img');
+
+    // Iterar sobre todos los libros y mostrar/ocultar según el texto de búsqueda
+    for (let i = 0; i < libros.length; i++) {
+        let titulo = libros[i].getElementsByTagName('p')[0].innerText.toLowerCase();
+        if (titulo.includes(input)) {
+            libros[i].style.display = ''; // Mostrar si coincide
+        } else {
+            libros[i].style.display = 'none'; // Ocultar si no coincide
+        }
+    }
+}
+</script>
+
+
+<div id="carrito">
+    <h2>Carrito de Compras</h2>
+    <ul id="listaCarrito"></ul>
+    <p>Total: <span id="totalCarrito">0</span></p>
+    <button class="btn-comprar" onclick="abrirModal()"><a href="carrito.html">Ver carrito</a></button>
+</div>
+
+
+<script>
+    // Lógica del carrito
+    let carrito = [];
+
+    function agregarAlCarrito(titulo, precio) {
+        carrito.push({ titulo, precio });
+        actualizarCarrito();
+    }
+
+    function actualizarCarrito() {
+        const listaCarrito = document.getElementById('listaCarrito');
+        const totalCarrito = document.getElementById('totalCarrito');
+
+        listaCarrito.innerHTML = '';
+        let total = 0;
+
+        carrito.forEach((producto, index) => {
+            total += producto.precio;
+            listaCarrito.innerHTML += `
+                <li>
+                    ${producto.titulo} - $${producto.precio} 
+                    <button onclick="eliminarDelCarrito(${index})">X</button>
+                </li>`;
+        });
+
+        totalCarrito.innerText = total;
+    }
+
+    function eliminarDelCarrito(index) {
+        carrito.splice(index, 1);
+        actualizarCarrito();
+    }
+
+    function buscarLibros() {
+        let input = document.getElementById('searchBar').value.toLowerCase();
+        let libros = document.getElementsByClassName('img');
+
+        for (let i = 0; i < libros.length; i++) {
+            let titulo = libros[i].getElementsByTagName('p')[0].innerText.toLowerCase();
+            if (titulo.includes(input)) {
+                libros[i].style.display = '';
+            } else {
+                libros[i].style.display = 'none';
+            }
+        }
+    }
+
+
+// Función para actualizar el carrito y guardarlo en localStorage
+function actualizarCarrito() {
+    const listaCarrito = document.getElementById('listaCarrito');
+    const totalCarrito = document.getElementById('totalCarrito');
+
+    listaCarrito.innerHTML = '';
+    let total = 0;
+
+    carrito.forEach((producto, index) => {
+        total += producto.precio;
+        listaCarrito.innerHTML += `
+            <li>
+                ${producto.titulo} - $${producto.precio} 
+                <button onclick="eliminarDelCarrito(${index})">X</button>
+            </li>`;
+    });
+
+    totalCarrito.innerText = total;
+
+    // Guarda el carrito en localStorage
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+}
+
+// Recuperar carrito al cargar la página en allbooks.html
+document.addEventListener("DOMContentLoaded", function () {
+    const carritoGuardado = localStorage.getItem('carrito');
+    if (carritoGuardado) {
+        carrito = JSON.parse(carritoGuardado);
+        actualizarCarrito();
+    }
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+<div id="toast-container"></div>
+
+<style>
+.btn-comprar {
+    background: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 10px auto;
+}
+
+.btn-comprar a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btn-comprar:hover {
+    background: #218838;
+}
+
+
+    #toast-container {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    .toast {
+        background-color: #28a745;
+        color: #fff;
+        padding: 15px 20px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        animation: slideIn 0.5s, fadeOut 0.5s 2.5s;
+    }
+
+    .toast i {
+        font-size: 18px;
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeOut {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+</style>
+
+<script>
+    function mostrarNotificacion(mensaje) {
+        const toastContainer = document.getElementById('toast-container');
+        const toast = document.createElement('div');
+        toast.className = 'toast';
+        toast.innerHTML = `<i class="fas fa-check-circle"></i> ${mensaje}`;
+        toastContainer.appendChild(toast);
+
+        // Eliminar la notificación después de 3 segundos
+        setTimeout(() => {
+            toast.remove();
+        }, 3000);
+    }
+
+    
+
+
+
+
+
+
+
+
+
+    
+    // Recuperar el carrito desde LocalStorage o inicializarlo vacío
+letcarrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
+function agregarAlCarrito(titulo, precio) {
+    carrito.push({ titulo, precio });
+    actualizarCarrito();
+}
+
+function actualizarCarrito() {
+    const listaCarrito = document.getElementById('listaCarrito');
+    const totalCarrito = document.getElementById('totalCarrito');
+
+    if (!listaCarrito || !totalCarrito) return; // Verificación para evitar errores
+
+    listaCarrito.innerHTML = '';
+    let total = 0;
+
+    carrito.forEach((producto, index) => {
+        total += producto.precio;
+        const li = document.createElement('li');
+        li.innerHTML = `
+            ${producto.titulo} - $${producto.precio} 
+            <button onclick="eliminarDelCarrito(${index})">X</button>
+        `;
+        listaCarrito.appendChild(li);
+    });
+
+    totalCarrito.innerText = total;
+
+    // Guardar el carrito en LocalStorage
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+}
+
+function eliminarDelCarrito(index) {
+    carrito.splice(index, 1);
+    actualizarCarrito();
+}
+
+// Cargar el carrito cuando la página se abre
+document.addEventListener('DOMContentLoaded', actualizarCarrito);
+</script>
+
+
+
+
+
+
+<style>
+        @media (max-width: 768px) {
+            .galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en móviles */
+    gap: 10px;
+    padding: 10px;
+    width: 410px;
+    margin-left: 23px;
+
+}
+
+.button {
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 8px;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #0056b3;
+    padding: 7px;
+    border: none;
+    transition: all 0.3s ease; 
+}
+
+
+#carrito {
+    width: 280px;
+}
+        }
+</style>
+
+
+
+</body>
+</html>
+
+</body>
+</html>

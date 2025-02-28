@@ -1,0 +1,361 @@
+
+
+body {
+    background: linear-gradient(
+        90deg,
+    rgb(58, 39, 221) 25%,
+    rgb(170, 28, 189) 80%
+    );
+}
+
+.header h2 {
+    color: #ffffff;
+    margin: 0%;
+    margin-top: 30px;
+    font-style: italic;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.header p {
+    color: #ffffff;
+    font-style: italic;
+    font-size: 20px;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.galeria {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.img {
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden; /* Asegura que la imagen no se salga del contenedor */
+    border-radius: 10px;
+    background-color: #ffffff;
+    width: 100%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.img img {
+    width: 100%;
+    max-width: 100%;
+    height: 220px;
+    object-fit: contain;
+    transition: transform 0.5s ease; /* Efecto de transición suave */
+}
+
+.img:hover {
+    transform: scale(1.05);
+}
+
+.img p {
+    margin: 10px 0 5px;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.img h5 {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+
+
+.contenedor-boton {
+    
+    display: flex;
+    justify-content: center; /* Centra el botón horizontalmente */
+    align-items: center; /* Centra el botón verticalmente si es necesario */
+    width: 100%; /* Opcional, depende del diseño */
+}
+
+button {
+    border-radius: 5px;
+    background-color: #0056b3;
+    padding: 7px;
+    border: none;
+    transition: all 0.3s ease; 
+    margin-bottom: 12px;
+    margin-top: 8px;
+}
+
+button i {
+    font-size: 16px;
+    color: #ffffff;
+    margin-right: 5px;
+    transition: color 0.3s ease; 
+}
+
+button:hover {
+    background-color: #868788; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button:hover i {
+    color: #ffffff; 
+}
+
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-style: italic;
+    color: #333;
+}
+
+.popup-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: lighter;
+    color: #504f4f;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+}
+
+.close-btn:hover {
+    color: #ffffff;
+    background-color: rgb(233, 33, 33);
+}
+
+/* Mostrar el cuadro emergente */
+.popup.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#carrito {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+#carrito h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+#carrito ul {
+    list-style-type: none;
+    padding: 0;
+    font-style: italic;
+}
+
+#carrito li {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+#carrito li button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#carrito li button:hover {
+    background-color: #a71d2a;
+}
+
+#totalCarrito {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+    #toast-container {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    .toast {
+        background-color: #28a745;
+        color: #fff;
+        padding: 15px 20px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        animation: slideIn 0.5s, fadeOut 0.5s 2.5s;
+    }
+
+    .toast i {
+        font-size: 18px;
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeOut {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+
+
+
+
+@media (max-width: 768px) {
+    .galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en móviles */
+    gap: 10px;
+    padding: 10px;
+    width: 410px;
+    margin-left: 17px;
+    }
+
+    .button  {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0%;
+    }
+
+    .precio {
+                flex-direction: column;
+                line-height: 0.3; /* Ajusta la altura de línea para que estén más juntos */
+            }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .oferta-card {
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+        transition: transform 0.3s ease; 
+    }
+
+    .oferta-content {
+        padding: 15px;
+    }
+
+    .precio {
+        margin: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 18px;
+
+    }
+
+    .antes {
+        display: flex;
+        justify-content: center;
+        text-decoration: line-through;
+        color: #888;
+        font-size: 12px;
+    }
+
+    .ahora {
+        display: flex;
+        justify-content: center;
+        color: #000000;
+        font-size: 12px;
+        font-weight: bolder;
+    }
