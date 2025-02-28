@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+</head>
+<body>
+    <link rel="stylesheet" href="main.css">
+
+<div class="header">
+    <h1>BookShelf</h1>
+
+    <!-- Ícono del menú para móviles -->
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">
+        ☰
+    </label>
+
+    <div class="head">
+        <h2><a href="allbooks.html">Catálogo</a></h2>
+        <h2><a href="new.html">Novedades</a></h2>
+        <h2><a href="carrito.html">Carrito</a></h2>
+        <h2><a href="contact.html">Contáctanos</a></h2>
+    </div>
+</div>
+
+<div class="content"> 
+    <h2>Bienvenido a tu librería virtual</h2>
+    <p>Descubre una amplia selección de libros para todos los gustos.</p>
+    <div class="btn"><a href="#mosaic-gallery">Ver más</a></div>
+</div>
+
+<div id="mosaic-gallery" class="mosaic-gallery">
+    <div class="img"><a href="juveniles.html"><img src="jeven.jpg"></a>
+        <div class="overlay-text">Juvenil</div>
+    </div>
+    <div class="img"><a href="in.html"><img src="nino.jpg"></a>
+        <div class="overlay-text">Infantil</div>
+    </div>
+
+    <div class="img"><a href="clasic.html"><img src="clasic.jpg"></a>
+        <div class="overlay-text">Clásicos</div>
+    </div>
+    <div class="img"><a href="autoa.html"><img src="auto.jpg"></a>
+        <div class="overlay-text">Autoayuda</div>
+    </div>
+</div>
+
+
+<style>
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: relative; /* Importante para que .head se posicione respecto a este */
+    background-color: #050505;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+#menu-toggle{
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+@media (max-width: 390px)  {
+
+    .header {
+        background-color: #050505;
+    }
+    
+.header a:hover{
+    color: rgb(125, 28, 189)
+}
+
+
+
+    .menu-icon {
+        display: block;
+    }
+
+    /* OCULTAR EL MENÚ POR DEFECTO */
+    .head {
+        display: none;
+        flex-direction: column;
+        background-color: #050505;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        height: 40px;
+        width: 100%;
+        padding: 10px 0;
+        z-index: 1000;
+        margin-top: 0px;
+        margin-left: 0px;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .head h2 {
+        display: flex;
+        font-size: 20px;
+        font-weight: lighter; 
+        justify-content: center;  
+        
+
+    }
+
+    .btn a:hover {
+        color: #ffffff;
+        background-color: #050505;
+    }
+
+    .content {
+        margin-bottom: 160px;
+    }
+    .content h2 {
+        font-size: 40px;
+        margin: 0%;
+        margin-left: 4px;
+        display: flex;
+        margin-top: 90px;
+    }
+
+    .content p {
+        font-size: 20px;
+        margin: 0%;
+    }
+    /* MOSTRAR MENÚ CUANDO SE TOCA EL ÍCONO */
+    #menu-toggle:checked+label+ .head {
+    display: flex;
+    }
+    
+
+    .mosaic-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en móviles */
+    gap: 5px 5px;
+    padding: 5px;
+    margin: 0%;
+    margin-right: 15px;
+}
+
+.img {
+height: 210px;
+width: 176px;
+margin: 0%;
+margin-bottom: 20px;
+margin-left: 5px;
+}
+}
+
+    
+</style>
+
+</body>
+</html>
